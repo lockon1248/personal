@@ -1,0 +1,334 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #fff;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    background-color: #394867;
+
+}
+
+h1 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2em;
+}
+
+
+h2 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3em;
+
+}
+
+h3 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 2em;
+}
+
+p {
+
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.8em;
+    letter-spacing: .2em;
+    font-size: 20px;
+}
+
+span {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+
+img {
+    vertical-align: middle;
+}
+
+
+.title_block {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 2em;
+    border-bottom: 1px solid #FFB800;
+    margin-bottom: 100px;
+}
+
+/* header */
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    display: flex;
+    background: linear-gradient(180deg, rgba(155, 164, 181, 0.4) -50%, rgba(255, 255, 255, 0) 174.5%);
+    align-items: end;
+    padding-bottom: 1em;
+    z-index: 3;
+}
+
+
+.logo {
+    padding: 0 1em;
+}
+
+.logo_name {
+    flex-grow: 1;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.logo_name a {
+    font-weight: 900;
+}
+
+
+.logo img {
+    padding-top: 10px;
+    min-width: 100px;
+    min-height: 100px;
+    font-weight: 900;
+
+}
+
+
+nav {
+    flex-wrap: wrap;
+    min-width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+
+}
+
+.header_word {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header_word a {
+    font-size: 1.5em;
+    font-weight: 900;
+    padding: 0 .1em;
+}
+
+.header_word .header_en {
+    font-size: 1em;
+}
+
+
+/* footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #fff;
+    justify-content: space-evenly;
+    max-width: 100%;
+    background-color: #3d5482;
+}
+
+
+.footer_container {
+    display: flex;
+    justify-content: center;
+    padding: 0px 15px;
+
+}
+
+.footer_logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 4em;
+
+}
+
+.content_block_one,
+.content_block_two {
+    display: flex;
+    flex-direction: column;
+    padding: 4em 1em;
+    justify-content: center;
+}
+
+.content_block_one a,
+.content_block_two a {
+    font-size: 1em;
+    padding: .5em 0 .5em 0;
+}
+
+.content_block_one a:nth-of-type(1),
+.content_block_two a:nth-of-type(1) {
+    padding-top: 2em;
+
+}
+
+
+.content_block_one span,
+.content_block_two span {
+    font-size: 1.5em;
+}
+
+
+
+.footer_icon {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 5em;
+}
+
+
+.fa-brands {
+    font-size: 2em;
+    padding: .5em .5em;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.4em;
+}
+
+.tibame {
+    padding: 1em 2em;
+    text-align: center;
+}
+
+.page_body {
+    position: relative;
+}
+
+.background_bar {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.background_bar img {
+    max-width: 100%;
+}
+/* 漢堡選單 */
+.hamburger {
+    min-width: 50px;
+    min-height: 50px;
+    background-color: #fff;
+    align-self: center;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hamburger span {
+    display: inline-block;
+    height: 8px;
+    width: 40px;
+    background-color: #3d5482;
+    border-radius: 5px;
+}
+
+
+/* 自適應 */
+
+
+
+@media screen and (max-width: 1024px) {
+    .header {
+        background-color: #3d5482;
+    }
+
+    nav {
+        display: none;
+        align-items: end;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    h2 {
+        font-size: 2em;
+    }
+
+
+    .logo_name h2 {
+        font-size: 2em;
+    }
+
+    .title_block h2 {
+        font-size: 1.5em;
+    }
+
+    .logo img {
+        max-width: 50px;
+        max-height: 50px;
+        font-weight: 900;
+    }
+
+    .title_block {
+        text-align: center;
+        width: 50%;
+        margin: auto;
+        padding: 1em 2em;
+        border-bottom: 1px solid #FFB800;
+        margin-bottom: 50px;
+    }
+
+    .content_block_one,
+    .content_block_two {
+        display: none;
+    }
+
+    .footer_logo {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 414px) {
+    .logo_name h2 {
+        font-size: 1em;
+
+    }
+
+
+
+    .title_block {
+        text-align: center;
+        width: 50%;
+        margin: auto;
+        padding: 0 2em;
+        border-bottom: 1px solid #FFB800;
+        margin-bottom: 10px;
+    }
+
+    .title_block h2 {
+        font-size: 1em;
+    }
+    .footer_icon{
+        padding: 0;
+    }
+
+}

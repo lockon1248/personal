@@ -1,0 +1,231 @@
+.big_img_block {
+    width: 100%;
+}
+
+.big_img_block img {
+    width: 100%;
+}
+
+h2 {
+    padding-bottom: 1em;
+}
+
+h3 {
+    padding-bottom: .5em;
+}
+
+
+label {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* title_block */
+.title_block {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #FFB800;
+}
+
+/* personal_block */
+.contact_block {
+
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+label {
+    line-height: 1.8em;
+    letter-spacing: .2em;
+
+}
+
+input {
+    width: 25em;
+    height: 2.5em;
+    background: rgba(254, 252, 252, 0.6);
+    border-radius: 10px;
+    padding-left: 1em;
+    margin: 0.1em 0 1.5em;
+    outline: none;
+    border: none;
+    font-size: 1em;
+}
+
+textarea {
+    width: 24em;
+    height: 20em;
+    border-radius: 15px;
+    background: rgba(254, 252, 252, 0.6);
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    padding-left: 1em;
+    padding-top: 1em;
+    margin-bottom: 1.5em;
+    resize: none;
+    font-size: 1.3em;
+}
+
+.contact_form {
+    padding: 2em 1em 1em;
+    /* border-right: 1px solid; */
+}
+
+.personal_title h2,
+.contact_inf h2 {
+    padding-bottom: 1em;
+}
+
+.sent_button {
+    text-align: end;
+}
+
+.sent {
+    padding: 1em;
+    background-color: #296391;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 0 3px 3px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+.center_line {
+    height: 800px;
+    border: 1px solid;
+    margin: 0 2em;
+    align-self: center;
+}
+
+
+/* contact_inf */
+.contact_inf {
+    padding: 2em 1em 1em;
+}
+
+.contact_inf_card {
+    display: flex;
+    margin-bottom: 1.5em;
+
+}
+
+.contact_inf_icon i {
+    font-size: 25px;
+    padding-right: 0.5em;
+    padding-top: 0.3rem;
+}
+
+/* map */
+.map {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.google_map iframe {
+    width: 50%;
+}
+
+/* FAQ */
+.question_block {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.question_block li {
+    list-style: none;
+    text-align: start;
+}
+
+.question_one,
+.question_two,
+.question_three,
+.question_four,
+.question_five,
+.question_six,
+.question_seven {
+    outline: auto;
+}
+
+.question {
+    padding: 1em;
+    outline: auto;
+    cursor: pointer;
+
+}
+
+.question_list li {
+
+    position: relative;
+
+}
+
+.answer {
+
+    display: none;
+    padding: 1em 1em;
+}
+
+/* 自適應 */
+
+@media screen and (max-width: 1024px) {
+    .contact_block {
+        border-radius: 10px;
+        width: 50%;
+        margin: auto;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 100px;
+        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.5);
+    }
+
+    .center_line {
+        height: 0px;
+        width: 400px;
+        border: 1px solid;
+        margin: 0 2em;
+        align-self: center;
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h3 {
+        font-size: 1em;
+    }
+
+    label {
+        font-size: .5em;
+    }
+
+    input {
+        width: 20em;
+    }
+    textarea{
+        width: 19em;
+    }
+    .center_line {
+        height: 0px;
+        width: 300px;
+        border: 1px solid;
+        margin: 0 2em;
+        align-self: center;
+    }
+    .contact_inf p{
+        font-size: 16px;
+    }
+}

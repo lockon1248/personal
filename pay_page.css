@@ -1,0 +1,196 @@
+.big_img_block {
+    width: 100%;
+}
+
+.big_img_block img {
+    width: 100%;
+}
+
+.class_inf {
+    width: 53%;
+    margin: auto;
+
+}
+
+.class_inner {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    display: flex;
+    padding: 2em 0;
+}
+
+
+.class_inf_img img {
+    border-radius: 20px;
+}
+
+.class_inf_word {
+    padding-left: 1em;
+    flex-grow: 1;
+}
+
+.class_inf_word h3 {
+    padding-bottom: 1em;
+
+}
+
+.class_inf_price {
+    align-self: flex-end;
+    font-size: 2em;
+    color: #FFB800;
+    position: relative;
+    top: 1em;
+}
+
+.class_inf_price span {
+    font-size: .5em;
+    color: #fff;
+}
+
+.total_price {
+    padding-top: .5em;
+    width: 50%;
+    margin: auto;
+    text-align: end;
+    font-size: 2em;
+    color: #FFB800;
+    padding-bottom: 1em;
+}
+
+.total_price span {
+    color: #fff;
+}
+
+.pay_inf_block {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.pay_personal_inf_block {
+    padding-right: 8em;
+}
+
+
+.pay_inf_input label {
+    font-size: 1.2em;
+    padding-bottom: .5em;
+}
+
+.pay_inf_input input {
+    width: 25em;
+    height: 2.5em;
+    background: rgba(254, 252, 252, 0.6);
+    border-radius: 15px;
+    padding-left: 1em;
+    margin: 0.1em 0 1.5em;
+    outline: none;
+    border: none;
+    font-size: 1em;
+}
+
+.pay_inf {
+    padding-bottom: 1em;
+}
+
+.pay_inf h3 {
+    padding-bottom: .1em;
+}
+
+.garbage_can {
+    align-self: flex-end;
+    position: relative;
+    top: 1.8em;
+    padding-left: 1em;
+
+}
+
+.garbage_can button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.garbage_can i {
+    font-size: 25px;
+    color: #fff;
+
+}
+
+
+/* invoice_inf */
+
+.invoice_inf_block {
+    padding-left: .5em;
+}
+
+.invoice_inf h3 {
+    padding-bottom: .1em;
+}
+
+
+.invoice_checkbox label {
+    font-size: 1.3em;
+    padding: .3em;
+}
+
+.invoice_checkbox {
+    padding-bottom: 1em;
+    display: flex;
+    justify-content: end;
+}
+
+.invoice_checkbox input {
+    width: 25px;
+    height: 25px;
+    align-self: center;
+
+}
+
+
+
+
+
+
+.invoice label {
+    font-size: 1.2em;
+}
+
+.invoice span {
+    font-size: 16px;
+}
+
+.invoice input {
+    width: 25em;
+    height: 2.5em;
+    background: rgba(254, 252, 252, 0.6);
+    border-radius: 15px;
+    padding-left: 1em;
+    margin: 0.1em 0 1.5em;
+    outline: none;
+    border: none;
+    font-size: 1em;
+}
+
+/* send */
+.send_button {
+    text-align: center;
+
+}
+
+.send_button button {
+    cursor: pointer;
+}
+
+
+
+.send_button button {
+    padding: 1em;
+    font-weight: 900;
+    background-color: #394867;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 5em;
+}

@@ -1,0 +1,205 @@
+.big_img_block{
+    width: 100%;
+}
+
+.big_img_block img{
+    width: 100%;
+}
+
+.page_body {
+    position: relative;
+}
+
+/* 位置 */
+.active_block_img_one,
+.active_block_img_two {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    
+}
+
+
+
+
+.active_block_img_one img,
+.active_block_img_two img {
+    width: 100%;
+    filter: blur(1em) contrast(50%);
+}
+
+.active_block_inner {
+    position: absolute;
+    height: 100vh;
+    width: 50%;
+    top: 0;
+    overflow: hidden;
+}
+
+.active_block_inner img {
+    width: 100vw;
+    filter: blur(0);
+    height: 100%;
+    
+
+   
+}
+
+
+.active_block_word_one {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translateY(-50%);
+}
+
+
+.active_block_word_two {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+
+/* 卡片 */
+.pay_class_word_block {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em;
+}
+
+.pay_class_word_title {
+    padding-bottom: 1em;
+    border-bottom: 1px solid #FFB800;
+}
+
+.teacher_name {
+    display: flex;
+    padding-top: 1em;
+
+}
+
+.teacher_name span {
+    font-size: 2em;
+}
+
+.teacher_name p {
+    align-self: end;
+}
+
+.class_date {
+    padding: 1em 0;
+}
+
+.class_word {
+    flex-grow: 1;
+    position: relative;
+    padding-right: 20em;
+}
+
+.class_word .place{
+    margin-top: 1em;
+    font-size: 30px;
+}
+
+.class_word .place span{
+    font-size: 30px;
+    color: #FFB800;
+    font-weight: 900;
+}
+
+
+.price_signup {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.price {
+    font-size: 2em;
+    color: #FFB800;
+    align-self: flex-end;
+
+}
+
+.price span {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.signup {
+    padding: 1em;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+/* active_block_img_two 右邊 */
+.active_block_img_two .active_block_inner {
+    right: 0;
+}
+
+
+/* 小卡片 */
+.center_block{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 200px 0;
+    background-color: #102626;
+}
+
+.travel_card{
+    width: 780px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.travel_word{
+    padding-top: 1em;
+   
+}
+
+.travel_word h3{
+    padding-top: 2em;
+    text-align: center;
+}
+
+.travel_word p{
+    padding-top: 1em;
+    width: 25em;
+    margin: auto;
+}
+.travel_img{
+    display: flex;
+    justify-content: center;
+}
+.travel_img img{
+    
+    width: 500px;
+    height: 500px;
+   
+}
+
+
+
+
+/* stick */
+.card_stick_sure span{
+    padding: .1em 1em;
+    background-color: #FD5A5A;
+    color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    top: 20%;
+}
+.card_stick_real{
+    padding: .1em 1em;
+    background-color: #4CB650;
+    color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+

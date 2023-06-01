@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "roboto";
+    src: url(./font/Roboto-Black.ttf);
+}
+
+.big_img_block{
+    width: 100%;
+}
+
+.big_img_block img{
+    width: 100%;
+}
+
+
+.teacher_block_one,
+.teacher_block_two, 
+.teacher_block_three,
+.teacher_block_four{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.teacher_introduce{
+    display: flex;
+    justify-content: space-between;
+}
+.teacher_name{
+    display: flex;
+    align-items: end;
+    padding-bottom: 1em;
+}
+.teacher_name h2{
+   padding-right: 1em;
+}
+.teacher_block_two .introduce_block,
+.teacher_block_four .introduce_block{
+    padding-left: 1em;
+}
+.introduce_block span{
+    width: 30em;
+    font-size: 1.5em;
+}
+
+article{  
+    width: 40em;
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.8em;
+    letter-spacing: 0.2em;
+    font-size: 20px;
+    padding: 1em 0;
+}
+.introduce_block p{
+    padding-bottom: 1em;
+}
+
+
+.dividing_line{
+    text-align: center;
+}
+
+/* teacher_name_stick */
+
+.teacher_name_stick{
+    display: flex;
+}
+.teacher_name_stick span{
+    font-size: 50px;
+    font-family: "roboto";
+    font-weight: 900;
+    opacity: .5;
+}
+
+.teacher_block_two .teacher_name_stick,
+.teacher_block_four .teacher_name_stick{
+   justify-content: end;
+}
+
+.teacher_img img{
+    border-radius: 100px;
+}
+
+
+
+
+
+/* teacher_work */
+
+.teacher_work{
+    display: flex;
+    background-color: black;
+    justify-content: space-evenly;
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+
+.teacher_work img{
+    padding: 3em 1em;
+    
+}
+
+.teacher_work_inner{
+    left: 0px;
+    width: 100%;
+    display: flex;
+    position: absolute;
+
+}
+
+

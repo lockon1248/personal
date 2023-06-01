@@ -1,0 +1,47 @@
+.big_img_block{
+    width: 100%;
+}
+
+.big_img_block img{
+    width: 100%;
+}
+
+.img_block{
+    max-width: 100%;
+    margin: auto;
+    display: grid; 
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(8,1fr);
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.page_body img{
+    width: 100%;
+    height: 100%;
+    object-fit:inherit;
+}
+
+.img_inner_three{
+    grid-column: 4;
+    grid-row: 1/3;
+}
+.img_inner_six{
+    grid-column: 2;
+    grid-row: 2/4;
+}
+.img_inner_ten{
+    grid-column: 4;
+    grid-row: 3/5;
+}
+.img_inner_trirteen{
+    grid-column: 3;
+    grid-row:4/6;
+}
+.img_inner_sixteen{
+    grid-row:5/7;
+    
+}
+.img_inner_nineteen{
+    grid-row:6/8;
+}
