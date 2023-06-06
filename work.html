@@ -13,12 +13,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
-
+    <!-- 貓頭鷹 -->
+    <link rel="stylesheet" href="./js/OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/js/OwlCarousel/dist/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./js/OwlCarousel/dist/owl.carousel.min.js"></script>
+    <!-- self -->
     <link rel="stylesheet" href="./all.css">
     <link rel="stylesheet" href="./work.css">
 </head>
 
 <body>
+    <input type="checkbox" id="menu_switch">
     <header class="header">
         <div class="logo">
             <img src="./personal_project_picture/logo/Component 3.svg">
@@ -26,7 +32,12 @@
         <div class="logo_name">
             <h2><a href="./index.html">飛鳥時攝</a></h2>
         </div>
-        <nav>
+        <label for="menu_switch" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="main_nav">
             <div class="header_word">
                 <a href="./index.html" class="header_ch">首頁</a>
                 <a href="./index.html" class="header_en">home page</a>
@@ -52,15 +63,17 @@
                 <a href="./contact_us.html" class="header_en">contact</a>
             </div>
         </nav>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
     </header>
     <div class="page_body">
-        <div class="big_img_block">
+        <div class="big_img_block owl-carousel">
             <img src="./personal_project_picture/bigpic/big_pic_work.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/bic_pic_active.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_abouts.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_paypage.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_artilce.png" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_free.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_payclass.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_contact.jpg" alt="">
         </div>
         <div class="title_block">
             <h2>作品展示</h2>
@@ -135,8 +148,16 @@
             <div class="background_bar">
                 <img src="./personal_project_picture/tool/line.svg" alt="">
             </div>
-
         </div>
+        <div class="light_box">
+            <div class="cross">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="light_pic"></div>
+        </div>
+
+
     </div>
     <footer class="footer">
         <div class="footer_container">
@@ -178,6 +199,49 @@
             <span>本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。</span>
         </div>
     </footer>
+    <script>
+        let img = document.createElement("img") //設變數img=createElement(img標籤)(createElement是加標籤的意思)
+        document.querySelector(".light_pic").appendChild(img);
+        //選到.light_pic，appendChild(加上)img變數
+        document.querySelector(".img_block").addEventListener("click", (e) => {
+            console.log(e.target) //知道甚麼是e.target
+            document.querySelector(".light_box").style.display = "flex"
+            //讓light_box變成flex
+            document.querySelector(".light_pic img").src = `${e.target.src}`
+            //選擇.light_pic的img標籤的src屬性，加上模板字{e.target.src}
+        });
+        document.querySelector(".light_box").addEventListener("click", (e) => {
+            e.stopPropagation();
+            if (e.eventPhase === 2) {
+                document.querySelector(".light_box").style.display = "none"
+                
+            }
+        });
+        document.querySelector(".cross").addEventListener("click", (e) => {
+            document.querySelector(".light_box").style.display = "none"
+        });
+    </script>
+    
+    <!-- 貓頭鷹首頁幻燈片 -->
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: false,
+
+            
+        });
+        $('.play').on('click', function () {
+            owl.trigger('play.owl.autoplay', [2000])
+        })
+        $('.stop').on('click', function () {
+            owl.trigger('stop.owl.autoplay')
+        })
+    </script>
 
 </body>
 

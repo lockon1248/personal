@@ -9,16 +9,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <!-- 貓頭鷹 -->
+    <link rel="stylesheet" href="./js/OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/js/OwlCarousel/dist/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./js/OwlCarousel/dist/owl.carousel.min.js"></script>
+    <!-- self -->
     <link rel="stylesheet" href="./all.css">
     <link rel="stylesheet" href="./pay_class.css">
-   
+
 </head>
 
 <body>
+    <input type="checkbox" id="menu_switch">
     <header class="header">
         <div class="logo">
             <img src="./personal_project_picture/logo/Component 3.svg">
@@ -26,7 +32,12 @@
         <div class="logo_name">
             <h2><a href="./index.html">飛鳥時攝</a></h2>
         </div>
-        <nav>
+        <label for="menu_switch" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="main_nav">
             <div class="header_word">
                 <a href="./index.html" class="header_ch">首頁</a>
                 <a href="./index.html" class="header_en">home page</a>
@@ -54,20 +65,35 @@
         </nav>
     </header>
     <div class="page_body">
-        <div class="big_img_block">
+        <div class="big_img_block owl-carousel">
+            <img src="./personal_project_picture/bigpic/big_pic_work.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/bic_pic_active.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_abouts.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_paypage.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_artilce.png" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_free.jpg" alt="">
             <img src="./personal_project_picture/bigpic/big_pic_payclass.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_contact.jpg" alt="">
         </div>
         <div class="title_block">
             <h2>付費課程</h2>
         </div>
         <div class="pay_class_one">
-            <div class="pay_class_inner_top">
+            <div class="pay_class_inner">
                 <div class="pay_class_img">
                     <img src="./personal_project_picture/payclass/pay1.png" alt="">
+                    <div class="card_stick">
+                        <div class="card_stick_sure">
+                            <span>確定開課</span>
+                        </div>
+                        <div class="card_stick_real">
+                            <span>實體課程</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="pay_class_word_block">
                     <div class="pay_class_word_title">
-                        <h3>台北教室-第80期風景攝影進階平日班</h3>
+                        <h4>台北教室-第80期風景攝影進階平日班</h4>
                     </div>
                     <div class="teacher_name">
                         <span>授課老師:</span>
@@ -84,14 +110,6 @@
                             高手才知道的相機秘訣一次搞懂<br>
                             進階曝光技巧秘密傳授不藏私<br>
                             室內課＋外拍指導<br></p>
-                        <div class="card_stick">
-                            <div class="card_stick_sure">
-                                <span>確定開課</span>
-                            </div>
-                            <div class="card_stick_real">
-                                <span>實體課程</span>
-                            </div>
-                        </div>
                     </div>
                     <div class="price_signup">
                         <div class="price">
@@ -106,11 +124,15 @@
                 </div>
             </div>
         </div>
+        <div class="end_line"></div>
         <div class="pay_class_two">
             <div class="pay_class_inner">
+                <div class="pay_class_img">
+                    <img src="./personal_project_picture/payclass/pay2.png" alt="">
+                </div>
                 <div class="pay_class_word_block">
                     <div class="pay_class_word_title">
-                        <h3>台南教室-第49期山岳攝影基礎平日班</h3>
+                        <h4>台南教室-第49期山岳攝影基礎平日班</h4>
                     </div>
                     <div class="teacher_name">
                         <span>授課老師:</span>
@@ -139,19 +161,22 @@
                         </a>
                     </div>
                 </div>
-                <div class="pay_class_img">
-                    <img src="./personal_project_picture/payclass/pay2.png" alt="">
-                </div>
             </div>
         </div>
+        <div class="end_line"></div>
         <div class="pay_class_three">
-            <div class="pay_class_inner_end">
+            <div class="pay_class_inner">
                 <div class="pay_class_img">
                     <img src="./personal_project_picture/payclass/pay3.png" alt="">
+                    <div class="card_stick">
+                        <div class="card_stick_real">
+                            <span>實體課程</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="pay_class_word_block">
                     <div class="pay_class_word_title">
-                        <h3>台中教室-第60期風景攝影平日基礎班</h3>
+                        <h4>台中教室-第60期風景攝影平日基礎班</h4>
                     </div>
                     <div class="teacher_name">
                         <span>授課老師:</span>
@@ -168,11 +193,6 @@
                             超好用的相機&手機秘訣<br>
                             簡單就能拍出漂亮的風景照<br>
                             室內課＋外拍指導<br></p>
-                        <div class="card_stick">
-                            <div class="card_stick_real">
-                                <span>實體課程</span>
-                            </div>
-                        </div>
                     </div>
                     <div class="price_signup">
                         <div class="price">
@@ -231,6 +251,28 @@
             <span>本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。</span>
         </div>
     </footer>
+
+
+    <!-- 貓頭鷹首頁幻燈片 -->
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: false,
+
+
+        });
+        $('.play').on('click', function () {
+            owl.trigger('play.owl.autoplay', [2000])
+        })
+        $('.stop').on('click', function () {
+            owl.trigger('stop.owl.autoplay')
+        })
+    </script>
 
 </body>
 

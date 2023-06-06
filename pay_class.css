@@ -9,6 +9,8 @@
 
 .pay_class_img img {
     border-radius: 15px;
+    max-width: 100%;
+    padding: 0 1em;
 }
 
 .pay_class_one,
@@ -16,32 +18,25 @@
 .pay_class_three {
     display: flex;
     justify-content: center;
+    padding: 100px 0;
 
 
-} 
-
- .pay_class_inner_top {
-    display: flex;
-    padding: 0 0 50px;
-    border-bottom: 1px solid #FFB800;
 } 
 
  .pay_class_inner {
     display: flex;
-    padding: 100px 0 50px;
-    border-bottom: 1px solid #FFB800;
-
 } 
 
-.pay_class_inner_end {
-    display: flex;
-    padding: 100px 0 50px;
+.pay_class_two .pay_class_inner{
+    flex-direction: row-reverse;
 }
+
 
 .pay_class_word_block {
     display: flex;
     flex-direction: column;
     padding: 0 1em;
+    
 }
 
 .pay_class_word_title {
@@ -69,7 +64,7 @@
 .class_word {
     flex-grow: 1;
     position: relative;
-    padding-right: 10em;
+   
 }
 
 .price_signup {
@@ -96,24 +91,60 @@
     border-radius: 5px;
 }
 
+.end_line{
+    max-width: 80%;
+    border-bottom: 1px solid #FFB800;
+    margin: auto;
+}
+
 
 /* card_stick */
+.pay_class_img {
+    position: relative;
+}
 .card_stick_sure span {
-    padding: .1em 1em;
+    padding: 0.1em 1em;
     background-color: #FD5A5A;
     color: #fff;
     border-radius: 5px;
     position: absolute;
-    right: 0;
+    right: 5%;
     top: 10%;
 }
 
 .card_stick_real {
-    padding: .1em 1em;
+    padding: 0.1em 1em;
     background-color: #4CB650;
     color: #fff;
     border-radius: 5px;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 5%;
+    top: 3%;
+}
+
+@media screen and (max-width: 1024px) {
+    .class_date{
+        padding: .5em 0;
+    }
+    .teacher_name span{
+        font-size: 1.8em;
+    }
+    .signup {
+        padding: .5em
+
+    }
+  
+}
+
+@media screen and (max-width: 768px) {
+    .pay_class_inner{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .card_stick_sure span {
+        top: 15%;
+    }
+    
 }

@@ -1,61 +1,85 @@
-.big_img_block{
+.big_img_block {
     width: 100%;
 }
 
-.big_img_block img{
+.big_img_block img {
     width: 100%;
 }
 
-.article{
-    width: 50%;
+.article {
+    max-width: 90%;
     margin: auto;
     padding-bottom: 100px;
     border-bottom: 1px solid #FFB800;
 }
 
-.article_title{
-    font-size: 3em;
+li img{
+    padding: 20px 20px 40px 20px;
+    background-color: white;
+    max-width: 100%;
+}
+
+.article_title {
     text-align: center;
     padding-bottom: 1em;
 }
 
-.second_title{
-    font-size: 2em;
+.second_title {
     padding: 2em 0 .5em;
 }
-.third_title{
-    font-size: 1.5em;
+
+.third_title {
     padding: 1em 0 .1em;
 }
-.class_card_block{
+
+.class_card_block {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.more_article{
-    padding: 5em 0em 3em;
+
+.more_article {
+    padding: 3em 0em;
     width: 50%;
     margin: auto;
     text-align: center;
 }
 
-.more_article h2{
+.more_article h2 {
     padding-bottom: 1em;
 }
 
-
-
-.class_card{
-    
+.class_card {
+    max-width: 440px;
     padding: 20px;
     text-align: center;
+   
 }
 
-.card_img{
+.card_img {
     position: relative;
 }
 
+.card_img img {
+    min-width: 100%;
+    
+}
 
-.card_shadow{
+.card_title {
+    padding: 1em 0em 1.5em;
+    text-align: start
+}
+
+
+.card_title h4 {
+    width: 100%;
+}
+.card_img a{
+    position: relative;
+    display: block;
+}
+
+ .card_shadow {
     position: absolute;
     top: 0;
     left: 0;
@@ -65,16 +89,90 @@
     background-color: rgba(0, 0, 0, 0.6);
     opacity: 0;
     transition: opacity .5s;
-}
+} 
 
-.class_card:hover .card_shadow{
+.class_card:hover .card_shadow {
     opacity: 1;
 }
 
-.card_word p{
+.class_card:hover .card_word {
+    opacity: 1;
+}
+
+.card_word {
+    width: 100%;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.card_word p {
+    padding: 1em;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     text-align: start;
-    padding: 1em;
 }
+
+ @media screen and (max-width: 1024px) {
+    .card_title a {
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .card_img{
+        display: flex;
+    }
+    .card_img img {
+        height: 300px;
+        padding: 20px;
+    }
+
+    .class_card_block {
+        display: block;
+    }
+
+    .class_card {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .card_shadow {
+        opacity: 1;
+        display: none;
+    }
+    .card_word_inner{
+        padding: 1em;
+    }
+
+    .card_title{
+        padding:0 0 1em;
+    }
+
+    .card_word {
+        position: static;
+        opacity: 1;
+    }
+
+    .card_word p {
+        padding: 0;
+        position: static;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .card_word p {
+        width: 13em;
+    }
+
+    .card_word {
+        width: 100%;
+    }
+
+
+} 

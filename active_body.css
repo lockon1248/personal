@@ -6,63 +6,31 @@
     width: 100%;
 }
 
-.page_body {
-    position: relative;
+
+
+.active_block_one{
+    display: flex;
+    justify-content: space-around;
 }
 
-/* 位置 */
-.active_block_img_one,
-.active_block_img_two {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    
-}
-
-
-
-
-.active_block_img_one img,
-.active_block_img_two img {
-    width: 100%;
-    filter: blur(1em) contrast(50%);
-}
-
-.active_block_inner {
-    position: absolute;
-    height: 100vh;
+.active_block_img_one{
     width: 50%;
-    top: 0;
-    overflow: hidden;
+}
+.active_block_img_one img{
+    width: 100%;
 }
 
-.active_block_inner img {
-    width: 100vw;
-    filter: blur(0);
-    height: 100%;
-    
-
-   
+.active_block_img_two{
+    width: 50%;
+}
+.active_block_img_two img{
+    width: 100%;
 }
 
-
-.active_block_word_one {
-    position: absolute;
-    top: 50%;
-    left: 55%;
-    transform: translateY(-50%);
-}
-
-
-.active_block_word_two {
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    transform: translateY(-50%);
-}
 
 /* 卡片 */
 .pay_class_word_block {
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding: 0 1em;
@@ -94,7 +62,6 @@
 .class_word {
     flex-grow: 1;
     position: relative;
-    padding-right: 20em;
 }
 
 .class_word .place{
@@ -122,15 +89,14 @@
 
 }
 
-.price span {
-    font-size: 1rem;
-    color: #fff;
+.price_signup a {
+    padding: 1em;
+    border: 1px solid; 
+    border-radius: 5px;
 }
 
-.signup {
-    padding: 1em;
-    border: 1px solid #fff;
-    border-radius: 5px;
+.price span {
+    font-size: 1em;
 }
 
 /* active_block_img_two 右邊 */
@@ -143,15 +109,17 @@
 .center_block{
     display: flex;
     justify-content: space-evenly;
-    padding: 200px 0;
-    background-color: #102626;
+    padding: 50px 0;
+    flex-wrap: wrap;
 }
 
 .travel_card{
-    width: 780px;
+    width: 300px;
     display: flex;
     flex-direction: column;
-
+}
+.travel_card img{
+    width: 100%;
 }
 
 .travel_word{
@@ -166,18 +134,15 @@
 
 .travel_word p{
     padding-top: 1em;
-    width: 25em;
     margin: auto;
 }
 .travel_img{
     display: flex;
     justify-content: center;
-}
-.travel_img img{
-    
-    width: 500px;
-    height: 500px;
-   
+    cursor: pointer;
+    padding:20px 20px 60px 20px ;
+    background-color: #ffffff;
+    margin: 0 1em;
 }
 
 
@@ -203,3 +168,13 @@
     top: 0;
 }
 
+
+@media screen and (max-width: 768px) {
+    .active_block_one{
+        display: block;
+    }
+    .active_block_img_one{
+        width: 100%;
+        padding: 1em;
+    }
+}

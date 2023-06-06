@@ -9,15 +9,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <!-- 貓頭鷹 -->
+    <link rel="stylesheet" href="./js/OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/js/OwlCarousel/dist/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./js/OwlCarousel/dist/owl.carousel.min.js"></script>
+    <!-- self -->
     <link rel="stylesheet" href="./all.css">
     <link rel="stylesheet" href="./contact_body.css">
 </head>
 
 <body>
+    <input type="checkbox" id="menu_switch">
     <header class="header">
         <div class="logo">
             <img src="./personal_project_picture/logo/Component 3.svg">
@@ -25,7 +31,12 @@
         <div class="logo_name">
             <h2><a href="./index.html">飛鳥時攝</a></h2>
         </div>
-        <nav>
+        <label for="menu_switch" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="main_nav">
             <div class="header_word">
                 <a href="./index.html" class="header_ch">首頁</a>
                 <a href="./index.html" class="header_en">home page</a>
@@ -53,7 +64,13 @@
         </nav>
     </header>
     <div class="page_body">
-        <div class="big_img_block">
+        <div class="big_img_block owl-carousel">
+            <img src="./personal_project_picture/bigpic/bic_pic_active.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_abouts.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_paypage.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_artilce.png" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_free.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_payclass.jpg" alt="">
             <img src="./personal_project_picture/bigpic/big_pic_contact.jpg" alt="">
         </div>
         <div class="title_block">
@@ -100,7 +117,7 @@
                         <i class="fa-sharp fa-solid fa-location-dot"></i>
                     </div>
                     <div class="contact_inf_word">
-                        <h3>地址:</h3>
+                        <h4>地址:</h4>
                         <p>320桃園市中壢區復興路46號9樓</p>
                     </div>
                 </div>
@@ -109,7 +126,7 @@
                         <i class="fa-solid fa-phone"></i>
                     </div>
                     <div class="contact_inf_word">
-                        <h3>電話:</h3>
+                        <h4>電話:</h4>
                         <p> 03-4251108</p>
                     </div>
                 </div>
@@ -118,7 +135,7 @@
                         <i class="fa-solid fa-paper-plane"></i>
                     </div>
                     <div class="contact_inf_word">
-                        <h3>E-mail:</h3>
+                        <h4>E-mail:</h4>
                         <p>abc123@tibame.com</p>
                     </div>
                 </div>
@@ -128,7 +145,7 @@
                         <i class="fa-solid fa-house"></i>
                     </div>
                     <div class="contact_inf_word">
-                        <h3>網址:</h3>
+                        <h4>網址:</h4>
                         <p>tibame.com</p>
                     </div>
                 </div>
@@ -234,20 +251,50 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
-        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-     <script>
+    <script>
         $(document).ready(function () {
             $(".question").click(function () {
                 let isOpen = $(this).siblings(".answer").is(":visible");
                 $(".answer").slideUp();
+                $(this).removeClass('active')
                 if (isOpen) return;
                 $(this).siblings(".answer").slideDown();
+                $(this).addClass('active')
                 $(this).parent().siblings().find(".answer").slideUp();
             });
 
         });
-    </script> 
+    </script>
+     <!-- 貓頭鷹首頁幻燈片 -->
+     <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: false,
+
+        });
+        $('.play').on('click', function () {
+            owl.trigger('play.owl.autoplay', [2000])
+        })
+        $('.stop').on('click', function () {
+            owl.trigger('stop.owl.autoplay')
+        })
+    </script>
+    <script>
+       let question = document.querySelector(".question")
+       let beforeStyle = window.getComputedStyle(question, ":before")
+       
+        
+            
+        
+
+
+    </script>
+
 </body>
 
 </html>

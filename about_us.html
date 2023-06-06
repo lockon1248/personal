@@ -13,12 +13,19 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+<!-- 貓頭鷹 -->
+<link rel="stylesheet" href="./js/OwlCarousel/dist/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="/js/OwlCarousel/dist/assets/owl.theme.default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="./js/OwlCarousel/dist/owl.carousel.min.js"></script>
+<!-- self -->
 <link rel="stylesheet" href="./all.css">
 <link rel="stylesheet" href="./about_us.css">
 
 
 
 <body>
+    <input type="checkbox" id="menu_switch">
     <header class="header">
         <div class="logo">
             <img src="./personal_project_picture/logo/Component 3.svg">
@@ -26,7 +33,12 @@
         <div class="logo_name">
             <h2><a href="./index.html">飛鳥時攝</a></h2>
         </div>
-        <nav>
+        <label for="menu_switch" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="main_nav">
             <div class="header_word">
                 <a href="./index.html" class="header_ch">首頁</a>
                 <a href="./index.html" class="header_en">home page</a>
@@ -54,8 +66,14 @@
         </nav>
     </header>
     <div class="page_body">
-        <div class="big_img_block">
+        <div class="big_img_block owl-carousel">
             <img src="./personal_project_picture/bigpic/big_pic_abouts.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/bic_pic_active.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_paypage.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_artilce.png" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_free.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_payclass.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_contact.jpg" alt="">
         </div>
         <div class="title_block">
             <h2>關於我們</h2>
@@ -100,9 +118,6 @@
         </div>
         <div class="teacher_block_two">
             <div class="teacher_introduce">
-                <div class="teacher_img">
-                    <img src="./personal_project_picture/teacher/second_teacher.jpg" alt="">
-                </div>
                 <div class="introduce_block">
                     <div class="teacher_name">
                         <h2>攝影老師</h2>
@@ -117,6 +132,9 @@
                     <p>著有:<br>
                         超簡單的寵物合拍構圖<br>
                         和英英的簡單生活日常</p>
+                </div>
+                <div class="teacher_img">
+                    <img src="./personal_project_picture/teacher/second_teacher.jpg" alt="">
                 </div>
             </div>
             <div class="teacher_name_stick">
@@ -175,9 +193,6 @@
         </div>
         <div class="teacher_block_four">
             <div class="teacher_introduce">
-                <div class="teacher_img">
-                    <img src="./personal_project_picture/teacher/forth_teacher.jpg" alt="">
-                </div>
                 <div class="introduce_block">
                     <div class="teacher_name">
                         <h2>攝影老師</h2>
@@ -188,6 +203,9 @@
                     <p> 2021 國家地理雜誌台灣攝影大賽 地方組 季軍<br>
                         2018 $ONY手機攝影比賽 動物組 第三名<br>
                         哈哈母特攝影版版主</p>
+                </div>
+                <div class="teacher_img">
+                    <img src="./personal_project_picture/teacher/forth_teacher.jpg" alt="">
                 </div>
             </div>
             <div class="teacher_name_stick">
@@ -250,7 +268,7 @@
     </footer>
 
 
-
+    <!-- 作品幻燈片 -->
     <script>
         function load() {
             var list = document.querySelectorAll('.teacher_work_inner');
@@ -284,8 +302,27 @@
                 };
             });
         }
-
         document.addEventListener('DOMContentLoaded', load);
+    </script>
+    <!-- 貓頭鷹首頁幻燈片 -->
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: false,
+
+
+        });
+        $('.play').on('click', function () {
+            owl.trigger('play.owl.autoplay', [2000])
+        })
+        $('.stop').on('click', function () {
+            owl.trigger('stop.owl.autoplay')
+        })
     </script>
 </body>
 

@@ -22,6 +22,8 @@
 </style>
 
 <body>
+    <input type="checkbox" id="menu_switch">
+    <!-- header -->
     <header class="header">
         <div class="logo">
             <img src="./personal_project_picture/logo/Component 3.svg">
@@ -29,7 +31,12 @@
         <div class="logo_name">
             <h2><a href="./index.html">飛鳥時攝</a></h2>
         </div>
-        <nav>
+        <label for="menu_switch" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="main_nav">
             <div class="header_word">
                 <a href="./index.html" class="header_ch">首頁</a>
                 <a href="./index.html" class="header_en">home page</a>
@@ -56,10 +63,13 @@
             </div>
         </nav>
     </header>
+    <!-- body -->
     <div class="page_body">
+        <!-- 上拉按鈕 -->
         <div class="back_top">
             <img src="./personal_project_picture/tool/top.svg" alt="">
         </div>
+        <!-- 大圖 -->
         <div class="big_img_block">
             <div class="first_page_img">
                 <img src="./personal_project_picture/big_img/first_page_img1.jpg">
@@ -71,6 +81,7 @@
                 <span class="second_sentence">Capture the moment</span>
             </div>
         </div>
+        <!-- introduce -->
         <div class="introduce_block">
             <div class="introduce_block_one">
                 <div class="introduce_block_title">
@@ -92,7 +103,9 @@
                 </div>
             </div>
         </div>
+        <!-- 分隔線 -->
         <div class="bord_line"></div>
+        <!-- news -->
         <div class="news_block">
             <div class="block_shadow">
                 <div class="block_shadow_top">
@@ -109,12 +122,10 @@
                         <img src="./personal_project_picture/Polaroid/first_page_news_one.jpg">
                         <div class="card_shadow">
                         </div>
-                        <div class="sold_out">
-                            <span>sold out</span>
-                        </div>
+                        <span class="sold_out">sold out</span>
                     </div>
                     <div class="card_word">
-                        <h3>台北教室-第35期山岳攝影平日班</h3>
+                        <h4>台北教室-第35期山岳攝影平日班</h4>
                         <span>5/15(一)0900開課</span>
 
                         <p>集結精華內容的平日班<br>
@@ -132,12 +143,10 @@
                         <img src="./personal_project_picture/Polaroid/first_page_news_two.jpg">
                         <div class="card_shadow">
                         </div>
-                        <div class="sold_out">
-                            <span>sold out</span>
-                        </div>
+                        <span class="sold_out">sold out</span>
                     </div>
                     <div class="card_word">
-                        <h3>台南教室-第48期鳥類攝影平日班</h3>
+                        <h4>台南教室-第48期鳥類攝影平日班</h4>
                         <span>5/16(二)0900開課</span>
                         <p>專門拍攝鳥類的平日班<br>
                             用手機就能拍出漂亮的照片<br>
@@ -154,7 +163,7 @@
                         <img src="./personal_project_picture/Polaroid/first_page_news_three.jpg">
                     </div>
                     <div class="card_word">
-                        <h3>台中教室-第87期山岳攝影假日班</h3>
+                        <h4>台中教室-第87期山岳攝影假日班</h4>
                         <span>5/14(日)0900開課</span>
                         <p>
                             重點複習的假日般班<br>
@@ -169,14 +178,23 @@
                 </div>
             </div>
         </div>
+        <!-- author -->
         <div class="author_block">
             <div class="author_block_top">
-                <div class="author_two">
-                    <div class="author_pic">
-                        <img src="./personal_project_picture/Polaroid/teacher2.jpg" alt="">
-                        <div class="author_introduce_word">
-                            <span class="author_title">攝影師</span>
-                            <p class="author_name">美代子</p>
+                <div class="author_word_logo">
+                    <div class="author_logo">
+                        <img src="./personal_project_picture/logo/Component 3.svg" alt="">
+                    </div>
+                    <div class="author_word">
+                        <h2>about us</h2>
+                        <p>
+                            我們是一群熱愛山林攝影和旅行的攝影師&旅行家，從高山到森林，從晨曦至日落，我們追逐色彩，操弄光影，我們是世界的眼睛，賦予人們無限精彩
+                        </p>
+                        <a href="./about_us.html">
+                            <span class="link_button">點我看更多</span>
+                        </a>
+                        <div class="author_number">
+                            <span>1</span>
                         </div>
                     </div>
                 </div>
@@ -190,21 +208,14 @@
                             <p class="author_name">白羽</p>
                         </div>
                     </div>
-
                 </div>
-                <div class="author_word_logo">
-                    <div class="author_logo">
-                        <img src="./personal_project_picture/logo/Component 3.svg" alt="">
-                    </div>
-                    <div class="author_word">
-                        <h2>about us</h2>
-                        <p>我們是一群熱愛山林攝影和旅行的攝影師&旅行家，從高山到森林，從晨曦至日落，我們追逐色彩，操弄光影，我們是世界的眼睛，賦予人們無限精彩</p>
-                        <a href="./about_us.html">
-                            <span class="link_button">點我看更多</span>
-                        </a>
-                    </div>
-                    <div class="author_number">
-                        <span>1</span>
+                <div class="author_two">
+                    <div class="author_pic">
+                        <img src="./personal_project_picture/Polaroid/teacher2.jpg" alt="">
+                        <div class="author_introduce_word">
+                            <span class="author_title">攝影師</span>
+                            <p class="author_name">美代子</p>
+                        </div>
                     </div>
                 </div>
                 <div class="author_three">
@@ -215,11 +226,7 @@
                             <p class="author_name">陳磊</p>
                         </div>
                     </div>
-
                 </div>
-
-            </div>
-            <div class="auther_block_bottom">
                 <div class="author_four">
                     <div class="author_pic">
                         <img src="./personal_project_picture/Polaroid/teacher4.jpg" alt="">
@@ -228,10 +235,10 @@
                             <p class="author_name">小可</p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
+        <!-- active_and_class -->
         <div class="active_and_class_block">
             <div class="active_block">
                 <div class="active_word">
@@ -277,6 +284,7 @@
                 </div>
             </div>
         </div>
+        <!-- gallery -->
         <div class="gallery_block">
             <div class="gallery_block_first">
                 <div class="gallery_block_img_one">
@@ -308,6 +316,7 @@
                 </div>
             </div>
         </div>
+        <!-- contact -->
         <div class="contact_us_block">
             <div class="contact_us_block_groupone">
                 <div class="contact_us_img">
@@ -330,6 +339,7 @@
                 </div>
             </div>
         </div>
+        <!-- 漂浮圖片 -->
         <div class="vage_img">
             <div class="vage_img_one_box">
                 <div class="vage_img_one">
@@ -417,10 +427,12 @@
             </div>
 
         </div>
+        <!-- bar -->
         <div class="background_bar">
             <img src="./personal_project_picture/tool/line.svg" alt="">
         </div>
     </div>
+    <!-- footer -->
     <footer class="footer">
         <div class="footer_container">
             <div class="footer_logo">
@@ -463,6 +475,7 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- 輪播動畫 -->
     <script>
         $('.first_page_img').each(function () {
 
@@ -483,6 +496,7 @@
             }
         })
     </script>
+    <!-- 回頂部 -->
     <script>
         $(".back_top").on("click", function (event) {
             $("html, body").animate(

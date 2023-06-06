@@ -3,19 +3,19 @@
     src: url(./font/Roboto-Black.ttf);
 }
 
-.big_img_block{
+.big_img_block {
     width: 100%;
 }
 
-.big_img_block img{
+.big_img_block img {
     width: 100%;
 }
 
 
 .teacher_block_one,
-.teacher_block_two, 
+.teacher_block_two,
 .teacher_block_three,
-.teacher_block_four{
+.teacher_block_four {
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -24,28 +24,35 @@
     padding-bottom: 100px;
     padding-top: 100px;
 }
-.teacher_introduce{
+
+.teacher_introduce {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-.teacher_name{
+
+.teacher_name {
     display: flex;
     align-items: end;
     padding-bottom: 1em;
 }
-.teacher_name h2{
-   padding-right: 1em;
+
+.teacher_name h2 {
+    padding-right: 1em;
 }
+
 .teacher_block_two .introduce_block,
-.teacher_block_four .introduce_block{
+.teacher_block_four .introduce_block {
+    order: 1;
     padding-left: 1em;
 }
-.introduce_block span{
+
+.introduce_block span {
     width: 30em;
     font-size: 1.5em;
 }
 
-article{  
+article {
     width: 40em;
     font-family: 'Noto Sans TC', sans-serif;
     line-height: 1.8em;
@@ -53,21 +60,23 @@ article{
     font-size: 20px;
     padding: 1em 0;
 }
-.introduce_block p{
+
+.introduce_block p {
     padding-bottom: 1em;
 }
 
 
-.dividing_line{
+.dividing_line {
     text-align: center;
 }
 
 /* teacher_name_stick */
 
-.teacher_name_stick{
+.teacher_name_stick {
     display: flex;
 }
-.teacher_name_stick span{
+
+.teacher_name_stick span {
     font-size: 50px;
     font-family: "roboto";
     font-weight: 900;
@@ -75,12 +84,12 @@ article{
 }
 
 .teacher_block_two .teacher_name_stick,
-.teacher_block_four .teacher_name_stick{
-   justify-content: end;
+.teacher_block_four .teacher_name_stick {
+    justify-content: end;
 }
 
-.teacher_img img{
-    border-radius: 100px;
+.teacher_img img {
+    border-radius: 15px;
 }
 
 
@@ -89,7 +98,7 @@ article{
 
 /* teacher_work */
 
-.teacher_work{
+.teacher_work {
     display: flex;
     background-color: black;
     justify-content: space-evenly;
@@ -98,17 +107,75 @@ article{
     height: 400px;
 }
 
-.teacher_work img{
+.teacher_work img {
     padding: 3em 1em;
-    
+
 }
 
-.teacher_work_inner{
+.teacher_work_inner {
     left: 0px;
     width: 100%;
     display: flex;
     position: absolute;
-
 }
 
+/* 自適應 */
 
+@media screen and (max-width: 1024px) {
+    .teacher_introduce {
+        flex-direction: column-reverse;
+        padding: 0 1em;
+    }
+
+    .teacher_block_two .introduce_block,
+    .teacher_block_four .introduce_block {
+        order: 0;
+
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .introduce_block {
+        width: 40em;
+    }
+
+    article {
+        width: 30em;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .teacher_img img{
+        width: 300px;
+    }
+    .teacher_name_stick{
+        display: none;
+    }
+    .teacher_name{
+        padding: 1em 0 0;
+    }
+    .teacher_name h2 {
+        padding-right: 0.5em;
+    }
+    .teacher_name h3{
+        align-self: center;
+    }
+    .introduce_block{
+        width: 100%;
+    }
+    article{
+        font-size: 20px;
+        width: 100%;
+        font-weight: 900;
+    }
+    .teacher_work{
+        height: 200px;
+    }
+
+    .teacher_work_inner img{
+        height: 200px;
+    }
+    .introduce_block span{
+        display: none;
+    }
+}

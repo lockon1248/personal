@@ -9,18 +9,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <!-- 貓頭鷹 -->
+    <link rel="stylesheet" href="./js/OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/js/OwlCarousel/dist/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./js/OwlCarousel/dist/owl.carousel.min.js"></script>
+    <!-- self -->
     <link rel="stylesheet" href="./all.css">
     <link rel="stylesheet" href="./pay_page.css">
-    
 
 </head>
 
 <body>
-
+    <input type="checkbox" id="menu_switch">
     <header class="header">
         <div class="logo">
             <img src="./personal_project_picture/logo/Component 3.svg">
@@ -28,7 +32,12 @@
         <div class="logo_name">
             <h2><a href="./index.html">飛鳥時攝</a></h2>
         </div>
-        <nav>
+        <label for="menu_switch" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="main_nav">
             <div class="header_word">
                 <a href="./index.html" class="header_ch">首頁</a>
                 <a href="./index.html" class="header_en">home page</a>
@@ -56,43 +65,58 @@
         </nav>
     </header>
     <div class="page_body">
-        <div class="big_img_block">
+        <div class="big_img_block owl-carousel">
+            <img src="./personal_project_picture/bigpic/big_pic_work.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/bic_pic_active.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_abouts.jpg" alt="">
             <img src="./personal_project_picture/bigpic/big_pic_paypage.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_artilce.png" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_free.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_payclass.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_contact.jpg" alt="">
         </div>
         <div class="title_block">
             <h2>報名課程</h2>
         </div>
+        <div class="class_line"></div>
         <div class="class_inf">
             <div class="class_inner">
-                <div class="class_inf_img">
-                    <img src="./personal_project_picture/pay/pay_page.jpg" alt="">
+                <div class="class_inner_top">
+                    <div class="class_inf_img">
+                        <img src="./personal_project_picture/pay/pay_page.jpg" alt="">
+                    </div>
+                    <div class="class_inf_word">
+                        <span>台中教室-第60期風景攝影平日基礎班</span>
+                        <div class="class_inf_word_inner">
+                            <p>實體課程</p>
+                            <p>5/23(二)09:00開課</p>
+                            <p>授課時長:八小時</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="class_inf_word">
-                    <h3>台中教室-第60期風景攝影平日基礎班</h3>
-                    <p>實體課程</p>
-                    <p>5/23(二)09:00開課</p>
-                    <p>授課時長:八小時</p>
+                <div class="class_inner_bottom">
+                    <div class="class_inf_price">
+                        <span>TWD:</span>
+                        9,300
+                        <span>元</span>
+                    </div>
+                    <div class="garbage_can">
+                        <button>
+                            <i class="fa-regular fa-trash-can"></i>
+                        </button>
+                    </div>
                 </div>
-                <div class="class_inf_price">
-                    <span>TWD:</span>
-                    9,300
-                    <span>元</span>
-                </div>
-                <div class="garbage_can">
-                    <button>
-                        <i class="fa-regular fa-trash-can"></i>
-                    </button>
-                    
-                </div>
+
             </div>
         </div>
+        <div class="class_line"></div>
         <div class="total_price">
             <span>總結:TWD:</span>9,300<span>元</span>
         </div>
         <div class="pay_inf_block">
             <div class="pay_personal_inf_block">
                 <div class="pay_inf">
-                    <h3>付款資訊:</h3>
+                    <h4>付款資訊:</h4>
                     <p>此資訊同時做為聯繫人資訊使用，請確實填寫。</p>
                 </div>
                 <div class="pay_inf_input">
@@ -110,18 +134,17 @@
             </div>
             <div class="invoice_inf_block">
                 <div class="invoice_inf">
-                    <h3>電子發票:</h3>
+                    <h4>電子發票:</h4>
                     <div class="invoice_checkbox">
-                        <input type="checkbox" id="personal">
-                        <label for="personal">個人發票</label>
-                        <input type="checkbox" id="union"><label for="union">統編發票</label>
-                        <input type="checkbox" id="donate"><label for="donate">捐贈發票</label>
-                        <input type="checkbox" id="paper"><label for="paper">紙本發票</label>
+                        <label for="personal"> <input type="checkbox" id="personal">個人發票</label>
+                        <label for="union"><input type="checkbox" id="union">統編發票</label>
+                        <label for="donate"><input type="checkbox" id="donate">捐贈發票</label>
+                        <label for="paper"><input type="checkbox" id="paper">紙本發票</label>
                     </div>
                 </div>
                 <div class="invoice">
                     <label for="">發票載具-手機條碼<span>(若選紙本發票則非必填)</span>:</label><br>
-                    <input type="email" placeholder="請輸入斜線&uml;/&uml;加上七位英數組成的手機條碼">
+                    <input type="email" placeholder="請輸入斜線&uml;/&uml;加上七位英數的條碼">
                 </div>
                 <div class="invoice">
                     <label for="">地址:</label><span>(若選擇電子發票則非必填)</span>:<br>
@@ -177,6 +200,27 @@
             <span>本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。</span>
         </div>
     </footer>
+    
+    <!-- 貓頭鷹首頁幻燈片 -->
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: false,
+
+
+        });
+        $('.play').on('click', function () {
+            owl.trigger('play.owl.autoplay', [2000])
+        })
+        $('.stop').on('click', function () {
+            owl.trigger('stop.owl.autoplay')
+        })
+    </script>
 
 </body>
 

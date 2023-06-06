@@ -12,6 +12,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <!-- 貓頭鷹 -->
+    <link rel="stylesheet" href="./js/OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/js/OwlCarousel/dist/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./js/OwlCarousel/dist/owl.carousel.min.js"></script>
+    <!-- self -->
     <link rel="stylesheet" href="./all.css">
     <link rel="stylesheet" href="./active_body.css">
 
@@ -19,6 +25,7 @@
 </head>
 
 <body>
+    <input type="checkbox" id="menu_switch">
     <header class="header">
         <div class="logo">
             <img src="./personal_project_picture/logo/Component 3.svg">
@@ -26,7 +33,12 @@
         <div class="logo_name">
             <h2><a href="./index.html">飛鳥時攝</a></h2>
         </div>
-        <nav>
+        <label for="menu_switch" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="main_nav">
             <div class="header_word">
                 <a href="./index.html" class="header_ch">首頁</a>
                 <a href="./index.html" class="header_en">home page</a>
@@ -54,15 +66,20 @@
         </nav>
     </header>
     <div class="page_body">
-        <div class="big_img_block">
+        <div class="big_img_block owl-carousel">
             <img src="./personal_project_picture/bigpic/bic_pic_active.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_abouts.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_paypage.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_artilce.png" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_free.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_payclass.jpg" alt="">
+            <img src="./personal_project_picture/bigpic/big_pic_contact.jpg" alt="">
         </div>
         <div class="title_block">
             <h2>約拍活動</h2>
         </div>
-        <div class="active_block_img_one">
-            <img src="./personal_project_picture/activite/active_big_pic_one.jpg" alt="">
-            <div class="active_block_inner">
+        <div class="active_block_one">
+            <div class="active_block_img_one">
                 <img src="./personal_project_picture/activite/active_big_pic_one.jpg" alt="">
             </div>
             <div class="active_block_word_one">
@@ -119,7 +136,7 @@
                     <img src="./personal_project_picture/activite/avtive_card_one.jpg" alt="">
                 </div>
                 <div class="travel_word">
-                    <h3>竹影湖光，攝影天堂</h3>
+                    <h4>竹影湖光，攝影天堂</h4>
                     <p>竹子湖的湖光倒影和綿延的竹林提供各位攝影玩家們一個迷人的天堂，將自然美景定格於鏡頭中。</p>
                 </div>
             </div>
@@ -128,7 +145,7 @@
                     <img src="./personal_project_picture/activite/active_card_two.jpg" alt="">
                 </div>
                 <div class="travel_word">
-                    <h3>湖畔竹林，相機定格永恆</h3>
+                    <h4>湖畔竹林，相機定格永恆</h4>
                     <p>在竹子湖湖畔的竹林中，我們一同捕捉下永恆的美景，讓時間凝固於每一張照片中。</p>
                 </div>
             </div>
@@ -137,14 +154,22 @@
                     <img src="./personal_project_picture/activite/active_card_three.jpg" alt="">
                 </div>
                 <div class="travel_word">
-                    <h3>湖光山色，攝影人生的無限可能</h3>
+                    <h4>湖光山色，攝影人生的無限可能</h4>
+                    <p>竹子湖的湖光和山色為攝影師們開啟了無限創作的可能，每一張照片都是攝影人生的獨特見證。</p>
+                </div>
+            </div>
+            <div class="travel_card">
+                <div class="travel_img">
+                    <img src="./personal_project_picture/activite/active_card_three.jpg" alt="">
+                </div>
+                <div class="travel_word">
+                    <h4>湖光山色，攝影人生的無限可能</h4>
                     <p>竹子湖的湖光和山色為攝影師們開啟了無限創作的可能，每一張照片都是攝影人生的獨特見證。</p>
                 </div>
             </div>
         </div>
-        <div class="active_block_img_two">
-            <img src="./personal_project_picture/activite/active_big_pic_two.jpg" alt="">
-            <div class="active_block_inner">
+        <!-- <div class="active_block_two">
+            <div class="active_block_img_two">
                 <img src="./personal_project_picture/activite/active_big_pic_two.jpg" alt="">
             </div>
             <div class="active_block_word_two">
@@ -224,9 +249,8 @@
                     <p> 鳶嘴山帶給攝影師們一片遠離城市喧囂的寧靜環境，讓他們專注於攝影創作，感受大自然的寧靜之美。</p>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
-
     <footer class="footer">
         <div class="footer_container">
             <div class="footer_logo">
@@ -270,9 +294,25 @@
 
 </body>
 
-<script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
-    integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
-<script>
+ <!-- 貓頭鷹首頁幻燈片 -->
+ <script>
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: false,
+
+    });
+    $('.play').on('click', function () {
+        owl.trigger('play.owl.autoplay', [2000])
+    })
+    $('.stop').on('click', function () {
+        owl.trigger('stop.owl.autoplay')
+    })
+</script>
 
 </script>
 </script>

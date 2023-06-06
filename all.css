@@ -9,6 +9,7 @@ body {
 }
 
 a {
+    font-family: 'Noto Sans TC', sans-serif;
     list-style: none;
     text-decoration: none;
     color: #fff;
@@ -37,8 +38,18 @@ h2 {
 
 h3 {
     font-family: 'Noto Sans TC', sans-serif;
-    font-size: 2em;
+    font-size: 2.5em;
 }
+
+h4 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 30px;
+}
+
+h5 {
+    font-size: 25px;
+}
+
 
 p {
 
@@ -229,35 +240,45 @@ nav {
 .background_bar img {
     max-width: 100%;
 }
+
 /* 漢堡選單 */
-.hamburger {
-    min-width: 50px;
-    min-height: 50px;
-    background-color: #fff;
-    align-self: center;
-    margin-right: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
 
-.hamburger span {
-    display: inline-block;
-    height: 8px;
-    width: 40px;
-    background-color: #3d5482;
-    border-radius: 5px;
+#menu_switch {
+    display: none;
 }
-
 
 /* 自適應 */
 
 
 
 @media screen and (max-width: 1024px) {
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-family: 'Noto Sans TC', sans-serif;
+        font-size: 2em;
+    }
+
+    p {
+
+        font-family: 'Noto Sans TC', sans-serif;
+        font-size: 16px;
+    }
+
     .header {
         background-color: #3d5482;
+        position: relative;
+    }
+
+    .header_word {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid;
+        text-align: center;
+        align-items: baseline;
     }
 
     nav {
@@ -265,21 +286,58 @@ nav {
         align-items: end;
     }
 
+    .hamburger {
+        min-width: 50px;
+        min-height: 50px;
+        background-color: #fff;
+        align-self: center;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .hamburger span {
+        display: inline-block;
+        height: 8px;
+        width: 40px;
+        background-color: #3d5482;
+        border-radius: 5px;
+    }
+
+    #menu_switch:checked+.header .main_nav {
+        display: block;
+    }
+
+    .main_nav {
+        width: 100vw;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        display: none;
+        background-color: #3d5482;
+    }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+
     h2 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
-
-    .logo_name h2 {
-        font-size: 2em;
-    }
-
-    .title_block h2 {
+    h3 {
         font-size: 1.5em;
     }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    h5 {
+        font-size: 22px;
+    }
+
 
     .logo img {
         max-width: 50px;
@@ -308,12 +366,18 @@ nav {
 
 
 @media screen and (max-width: 414px) {
-    .logo_name h2 {
+    h3 {
         font-size: 1em;
-
     }
 
+    h4 {
+        font-family: 'Noto Sans TC', sans-serif;
+        font-size: 20px;
+    }
 
+    h5 {
+        font-size: 18px;
+    }
 
     .title_block {
         text-align: center;
@@ -324,11 +388,12 @@ nav {
         margin-bottom: 10px;
     }
 
-    .title_block h2 {
-        font-size: 1em;
-    }
-    .footer_icon{
+    .footer_icon {
         padding: 0;
+    }
+
+    p {
+        font-size: 16px;
     }
 
 }
