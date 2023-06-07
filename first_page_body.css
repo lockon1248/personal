@@ -807,6 +807,11 @@
     .author_word_logo {
         padding: 50px;
     }
+
+    .author_word {
+        width: 50%;
+    }
+
     .gallery_block_word{
         width: 100%;
     }
