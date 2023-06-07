@@ -183,9 +183,11 @@ textarea {
     transform: rotate(0deg);
 
 }
+
 .question.active p::before {
     transform: rotate(90deg);
 }
+
 .question_list:checked .question p::before {
     transform: rotate(90deg);
 }
@@ -193,23 +195,22 @@ textarea {
 
 /* 自適應 */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
     .contact_block {
-        border-radius: 10px;
-        width: 50%;
-        margin: auto;
         flex-direction: column;
         justify-content: center;
-        margin-bottom: 100px;
-        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.5);
-    }
-    .contact_form{
-        width: 100%;
-    }
-    .contact_inf{
-        width: 100%;
+        width: 50%;
+        margin: auto; 
     }
 
+    .contact_form {
+        width: 100%;
+        padding-bottom: 4em;
+    }
+
+    .contact_inf {
+        width: 100%;
+    }
 
     .center_line {
         height: 0px;
@@ -217,8 +218,8 @@ textarea {
         border: 1px solid;
         margin: 0 2em;
         align-self: center;
-
     }
+
 }
 
 @media screen and (max-width: 768px) {

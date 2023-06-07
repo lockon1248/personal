@@ -17,6 +17,9 @@
     gap: 0.5em;
     padding-top: 1em
 }
+.img_block img{
+    cursor: pointer;
+}
 
 .page_body img{
     width: 100%;
