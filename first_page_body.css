@@ -366,6 +366,7 @@
     z-index: 9;
     position: relative;
     justify-content: center;
+    padding: 1em;
 }
 
 .active_word,
@@ -390,6 +391,7 @@
     z-index: 9;
     position: relative;
     justify-content: center;
+    padding: 1em;
     
 }
 
@@ -411,6 +413,7 @@
     margin-bottom: 100px;
     position: relative;
     z-index: 9;
+    padding: 1em;
 }
 
 .gallery_block p {}
@@ -451,9 +454,10 @@
     position: relative;
     z-index: 9;
     padding-bottom: 5%;
+    padding: 1em;
 }
 
-.contact_us_block p {}
+
 
 .contact_us_block_groupone {
     display: flex;
@@ -733,6 +737,9 @@
 
 }
 
+
+
+
 /* 自適應1024 */
 @media screen and (max-width: 1024px) {
     .first_page_img {
@@ -799,6 +806,9 @@
     /* author */
     .author_word_logo {
         padding: 50px;
+    }
+    .gallery_block_word{
+        width: 100%;
     }
 
     
@@ -972,6 +982,10 @@
         background-color: #4a4f56;
     }
 
+    .contact_us_word {
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 568px) {
@@ -1117,5 +1131,8 @@
     .contact_us_number {
         top: -25%;
         left: 15%;
+    }
+    .active_word, .class_word{
+        width: 100%;
     }
 }

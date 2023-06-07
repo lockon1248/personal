@@ -507,6 +507,38 @@
             );
         });
     </script>
+    <script>
+        $(function () {
+            let showheight = 500
+            $('.news_block').css({
+                dispaly: 'block',
+                opacity: 0,
+            })
+
+            $(window).scroll(function () {
+                $('.news_block').each(function () {
+                    let newTop = $(this).offset().top 
+                    //newTop = .this(.news_block)與螢幕的距離(offset()=與螢幕的距離)後面的.top不用加小括號，指物件和螢幕上面的距離
+                    console.log(newTop)
+                    if ($(window).scrollTop() >= (newTop + showheight) - $(window).height()) {
+                        //$(window).scrollTop() 滾動視窗的垂直滾動距離。
+                        //當window滾動視窗的垂直滾動距離大於或等於(.new_top與螢幕的距離 + showheight(500)- $(window)的高度)
+                        $(this).stop().fadeIn(500).css({
+                            dispaly: 'flex',
+                            opacity: 1,
+                        })
+                    } else {
+                        $(this).stop().fadeOut(500).css({
+                            dispaly: 'flex',
+                            opacity: 0
+                        })
+                    }
+                })
+            })
+        });
+    </script>
+
+
 
 </body>
 

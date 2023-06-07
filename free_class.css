@@ -83,6 +83,10 @@
     transform: translateY(-50%);
     text-align: start;
 }
+.float{
+    opacity: 1;
+    transition: opacity .5s;
+}
 
 @media screen and (max-width: 768px) {
      .card_img img {
@@ -118,10 +122,5 @@
         width: 100%;
     }
 
-    .card_word {
-        /* position: absolute;
-        top: 60%;
-        left: 100%;
-    } */
-    }
+  
 }
