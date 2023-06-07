@@ -44,12 +44,18 @@
     text-shadow: 0.1em 0.1em #333;
 }
 
-.introduce_word_left p,
+
 .introduce_word_right p {
     text-align: start;
-    width: 20em;
+    width: 50%;
 }
 
+.introduce_word_left p{
+    text-align: start;
+    width: 50%;
+    margin-left: 50%;
+    padding-right: 1em;
+}
 
 .introduce_word_left {
     position: absolute;
@@ -132,14 +138,10 @@
         left: 100%;
     }
 
-    .introduce_word_left p,
-    .introduce_word_right p {
-        width: 15em;
-    }
     
     .introduce_word_left,
     .introduce_word_right {
-        top: 70%;
+        top: 60%;
     }
 
 }
@@ -168,7 +170,10 @@
 
     .introduce_word_left p,
     .introduce_word_right p {
-        width: 15em;
+       width: 100%;
+    }
+    .introduce_word_left p{
+        margin: 0;
     }
 
     .introduce_pic{
