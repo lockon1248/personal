@@ -12,13 +12,17 @@
 }
 
 
-.teacher_block_one,
 .teacher_block_two,
 .teacher_block_three,
 .teacher_block_four {
     margin: auto;
     padding-bottom: 100px;
     padding-top: 100px;
+}
+
+.teacher_block_one{
+    margin: auto;
+    padding-bottom: 100px;
 }
 
 .teacher_introduce {
@@ -57,7 +61,7 @@ article {
     font-family: 'Noto Sans TC', sans-serif;
     line-height: 1.8em;
     letter-spacing: 0.2em;
-    font-size: 20px;
+    font-size: 15px;
     padding: 1em 0;
 }
 
@@ -163,12 +167,19 @@ article {
     .introduce_block{
         width: 100%;
     }
+
+    .teacher_work{
+        height: 360px;
+    }
 }
-    
-@media screen and (max-width: 414px) {
+
+@media screen and (max-width: 450px) {
     .teacher_name_stick{
         display: none;
     }
+}
+    
+@media screen and (max-width: 414px) {
     .teacher_name{
         padding: 1em 0 0;
     }
@@ -196,4 +207,5 @@ article {
     .introduce_block span{
         display: none;
     }
+  
 }

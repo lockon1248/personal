@@ -21,13 +21,13 @@
     padding: 100px 0;
 
 
-} 
+}
 
- .pay_class_inner {
+.pay_class_inner {
     display: flex;
-} 
+}
 
-.pay_class_two .pay_class_inner{
+.pay_class_two .pay_class_inner {
     flex-direction: row-reverse;
 }
 
@@ -36,7 +36,7 @@
     display: flex;
     flex-direction: column;
     padding: 0 1em;
-    
+
 }
 
 .pay_class_word_title {
@@ -46,11 +46,13 @@
 
 .teacher_name {
     display: flex;
-
 }
 
+
 .teacher_name span {
-    font-size: 2em;
+    display: flex;
+    font-size: 2em; 
+    align-self: center;
 }
 
 .teacher_name p {
@@ -64,7 +66,7 @@
 .class_word {
     flex-grow: 1;
     position: relative;
-   
+
 }
 
 .price_signup {
@@ -91,7 +93,7 @@
     border-radius: 5px;
 }
 
-.end_line{
+.end_line {
     max-width: 80%;
     border-bottom: 1px solid #FFB800;
     margin: auto;
@@ -102,6 +104,7 @@
 .pay_class_img {
     position: relative;
 }
+
 .card_stick_sure span {
     padding: 0.1em 1em;
     background-color: #FD5A5A;
@@ -123,28 +126,28 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .class_date{
+    .class_date {
         padding: .5em 0;
     }
-    .teacher_name span{
+
+    .teacher_name span {
         font-size: 1.8em;
     }
+
     .signup {
         padding: .5em
-
     }
-  
-}
 
-@media screen and (max-width: 768px) {
-    .pay_class_inner{
+    .pay_class_inner {
         display: block;
     }
 }
+
+@media screen and (max-width: 768px) {}
 
 @media screen and (max-width: 414px) {
     .card_stick_sure span {
         top: 15%;
     }
-    
+
 }

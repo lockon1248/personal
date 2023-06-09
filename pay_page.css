@@ -26,7 +26,7 @@
 
 
 .class_inner {
-    padding: 2em 0 0;
+    padding: 30px 20px 0;
 }
 
 .class_inner_top{
@@ -43,18 +43,18 @@
 
 
 .invoice_checkbox {
-    padding-bottom: 1em;
+    padding-bottom: 20px;
     display: flex;
     justify-content: end;
 }
 .class_inf_word{
-    padding-left: 1em;
+    padding:0 20px;
 
 }
 
 .class_inf_word span{
     font-family: 'Noto Sans TC', sans-serif;
-    font-size: 2em;
+    font-size: 30px;
     font-weight: 900;
 }
 
@@ -237,6 +237,9 @@
     .invoice_checkbox label {
         font-size: 1em
     }
+    .total_price{
+        width: 45%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -244,7 +247,7 @@
         padding-right:0;
     }
     .class_inf{
-        max-width: 50%;
+        max-width: 70%;
     }
     .pay_inf_block{
         display: block;
@@ -261,6 +264,9 @@
     }
     .class_inner_bottom{
         width: 100%;
+    }
+    .total_price {
+        width: 60%;
     }
 }
 

@@ -4,10 +4,15 @@
     overflow: hidden;
 }
 
+
 .introduce_card_one,
 .introduce_card_two {
     width: 50%;
     position: relative;
+}
+
+.introduce_pic {
+    width: 100%;
 }
 
 .introduce_pic img {
@@ -27,10 +32,12 @@
     padding: 0.3em;
     font-weight: 900;
     text-shadow: 0.1em 0.1em #333;
+    width: 3em;
 }
 
 
 .introduce_title_left {
+    width: 3em;
     z-index: 1;
     position: absolute;
     display: flex;
@@ -50,11 +57,11 @@
     width: 50%;
 }
 
-.introduce_word_left p{
+.introduce_word_left p {
     text-align: start;
     width: 50%;
     margin-left: 50%;
-    padding-right: 1em;
+
 }
 
 .introduce_word_left {
@@ -125,8 +132,9 @@
         overflow: hidden;
     }
 
-    .introduce_title_left {
-        right: -100%;
+    .introduce_card_one,
+    .introduce_card_two {
+        width: 100%;
     }
 
     .introduce_word_left_shadow,
@@ -134,23 +142,9 @@
         opacity: 1;
     }
 
-    .introduce_word_left_shadow {
-        left: 100%;
-    }
-
-    
     .introduce_word_left,
     .introduce_word_right {
         top: 60%;
-    }
-
-}
-
-
-@media screen and (max-width: 414px) {
-
-    .introduce_title_left {
-        right: -100%;
     }
 
     .introduce_word_left_shadow,
@@ -159,25 +153,44 @@
         background-color: transparent;
     }
 
-    .introduce_word_left_shadow {
-        left: 100%;
+    .introduce_title_left,
+    .introduce_title_right {
+        width: auto;
+    }
+
+    .introduce_pic img {
+        min-width: none;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .introduce_title_right,
+    .introduce_title_left {
+        top: 20%;
     }
 
     .introduce_word_left,
     .introduce_word_right {
-        top: 70%;
+        top: 30%;
+        width: 100%;
     }
+
+}
+
+@media screen and (max-width: 450px) {
 
     .introduce_word_left p,
     .introduce_word_right p {
-       width: 100%;
-    }
-    .introduce_word_left p{
-        margin: 0;
+        display: none;
     }
 
-    .introduce_pic{
-        height: 600px;
+    .introduce_title_right,
+    .introduce_title_left {
+        top: 50%;
+        transform: translateY(-50%);
     }
 
 }

@@ -77,6 +77,7 @@
 
 
 .price_signup {
+    padding-top: 1em;
     display: flex;
     justify-content: space-between;
 
@@ -84,9 +85,8 @@
 
 .price {
     font-size: 2em;
-    color: #FFB800;
     align-self: flex-end;
-
+    color: #FFB800;
 }
 
 .price_signup a {
@@ -97,6 +97,7 @@
 
 .price span {
     font-size: 1em;
+    color: #ffffff;
 }
 
 /* active_block_img_two 右邊 */
@@ -114,6 +115,7 @@
 }
 
 .travel_card{
+    padding-bottom: 10px;
     width: 300px;
     display: flex;
     flex-direction: column;

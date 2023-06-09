@@ -32,7 +32,7 @@ h2 {
     font-family: 'Noto Sans TC', sans-serif;
     font-style: normal;
     font-weight: 900;
-    font-size: 3em;
+    font-size: 50px;
 
 }
 
@@ -73,7 +73,7 @@ img {
     text-align: center;
     width: 50%;
     margin: auto;
-    padding: 2em;
+    padding: 2rem;
     border-bottom: 1px solid #FFB800;
     margin-bottom: 100px;
 }
@@ -129,6 +129,7 @@ nav {
 }
 
 .header_word {
+    margin: 10px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -159,7 +160,7 @@ nav {
 .footer_container {
     display: flex;
     justify-content: center;
-    padding: 0px 15px;
+    padding: 10px 15px;
 
 }
 
@@ -252,19 +253,29 @@ nav {
 
 
 @media screen and (max-width: 1024px) {
+    html{
+        font-size: 10px;
+    }
+    
+
     h2 {
-        font-size: 2.5em;
+        font-size: 45px;
     }
 
     h3 {
         font-family: 'Noto Sans TC', sans-serif;
-        font-size: 2em;
+        font-size: 35px;
+    }
+
+    h4 {
+        font-family: 'Noto Sans TC', sans-serif;
+        font-size: 30px;
     }
 
     p {
 
         font-family: 'Noto Sans TC', sans-serif;
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .header {
@@ -311,6 +322,7 @@ nav {
     }
 
     .main_nav {
+        height: 100vh;
         width: 100vw;
         position: absolute;
         left: 0;
@@ -318,24 +330,34 @@ nav {
         display: none;
         background-color: #3d5482;
     }
+    .footer_icon_block i{
+        font-size: 4em;
+    }
 }
+
+
+
+
 
 @media screen and (max-width: 768px) {
 
     h2 {
-        font-size: 1.8em;
+        font-size: 30px;
     }
 
     h3 {
-        font-size: 1.5em;
+        font-size: 24px;
     }
-
-    h4 {
+    h4{
         font-size: 25px;
     }
 
     h5 {
         font-size: 22px;
+    }
+
+    p{
+        font-size: 18px;
     }
 
 

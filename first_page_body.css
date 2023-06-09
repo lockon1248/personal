@@ -6,6 +6,10 @@
 
 }
 
+img {
+    width: 100%;
+}
+
 
 /* 大圖 */
 .big_img_block {
@@ -41,7 +45,7 @@
     left: 10%;
     position: absolute;
     font-size: 5em;
-    text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.8);
 }
 
 .first_page_word .second_sentence {
@@ -92,8 +96,13 @@
     display: flex;
 }
 
+.introduce_block_word {
+    padding: 10px;
+}
+
 .introduce_block_word p {
     text-align: start;
+    padding: 5px;
 }
 
 /* 分隔線 */
@@ -140,6 +149,7 @@
 
 .news_block_card {
     display: flex;
+    padding: 10px;
 }
 
 .news_card_one,
@@ -182,10 +192,6 @@
 
 }
 
-.card_word a {
-    color: #000;
-}
-
 .card_word span {
     letter-spacing: .1em;
     font-size: 20px;
@@ -195,6 +201,12 @@
 
 .card_word .click {
     justify-content: end;
+}
+
+.card_word .click a {
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
 }
 
 .card_shadow {
@@ -259,7 +271,7 @@
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     position: relative;
     z-index: 9;
 
@@ -294,10 +306,14 @@
     align-self: center;
 }
 
+.author_word_title {
+    justify-content: center;
+}
+
 .author_word {
     margin: auto;
     position: relative;
-    width: 20%;
+    width: 50%;
     margin: auto;
 }
 
@@ -305,20 +321,58 @@
     text-align: center;
 }
 
-.link_button {
-    display: block;
-    margin: 20px auto;
-    width: 7.5em;
-    padding: 1em;
-    border: 1px solid white;
+.author_word p {
+    width: 50%;
+    margin: auto;
 }
 
-.author_number {
-    position: absolute;
-    top: -53%;
-    left: -7%;
-    font-size: 200px;
+.link_button {
+    display: flex;
+    padding: 2em;
+    justify-content: center;
+
 }
+
+.link_button a {
+    padding: 1em;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+/* number */
+
+.author_word_title h2,
+.active_word_title h2,
+.class_word_title h2,
+.gallery_word_title h2,
+.contact_us_title h2 {
+    display: flex;
+    align-items: end;
+}
+
+.author_word_title,
+.class_word_title,
+.gallery_word_title,
+.contact_us_title,
+.active_word_title {
+    display: flex;
+}
+
+.author_word_title_logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.author_number,
+.active_number,
+.class_number,
+.contact_us_number,
+.gallery_block_number {
+    font-size: 200px;
+    transform: translateY(50px);
+}
+
 
 /* author_pic */
 
@@ -338,6 +392,11 @@
 
 }
 
+.author_introduce_word {
+    text-align: center;
+}
+
+
 .author_pic p {
     color: #000;
     font-size: 2em;
@@ -354,12 +413,12 @@
     justify-content: center;
     margin: auto;
     align-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     position: relative;
     z-index: 1;
 }
 
-.active_and_class_block p {}
+
 
 .active_block {
     display: flex;
@@ -379,12 +438,6 @@
     position: relative;
 }
 
-.active_number {
-    position: absolute;
-    top: 8%;
-    left: 0%;
-    font-size: 200px;
-}
 
 .class_block {
     display: flex;
@@ -392,14 +445,11 @@
     position: relative;
     justify-content: center;
     padding: 1em;
-    
+
 }
 
-.class_number {
-    position: absolute;
-    top: 7%;
-    left: 2%;
-    font-size: 200px;
+.class_word {
+    order: 2;
 }
 
 
@@ -410,13 +460,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     position: relative;
     z-index: 9;
     padding: 1em;
 }
-
-.gallery_block p {}
 
 .gallery_block_first,
 .gallery_block_second,
@@ -426,7 +474,7 @@
     justify-content: center;
 }
 
-.gallery_block_second{
+.gallery_block_second {
     justify-content: space-evenly;
 }
 
@@ -436,12 +484,6 @@
     position: relative;
 }
 
-.gallery_block_number {
-    position: absolute;
-    top: -17%;
-    left: -8%;
-    font-size: 200px;
-}
 
 
 /* contact_us_block */
@@ -478,12 +520,7 @@
     position: relative;
 }
 
-.contact_us_number {
-    position: absolute;
-    top: -53%;
-    left: 75%;
-    font-size: 200px;
-}
+
 
 /* 動畫區塊 */
 
@@ -725,59 +762,9 @@
     }
 }
 
-@media screen and (max-width: 1145px) {
-    .introduce_block_one {
-        justify-content: center;
-    }
-    .gallery_block_img_three {
-        display: none;
-    }
-    
-    
-
-}
-
-
-
-
-/* 自適應1024 */
-@media screen and (max-width: 1024px) {
-    .first_page_img {
-        height: 600px;
-    }
-
-    .first_page_word {
-        top: 0;
-        font-size: 4em;
-    }
-
-    /* introduce */
-    .introduce_block {
+@media screen and (max-width: 1280px) {
+    .big_img_block {
         margin-bottom: 50px;
-
-    }
-
-    .introduce_block_one {
-        justify-content: center;
-    }
-
-    .introduce_block_one h2 {
-        margin: auto;
-        width: 17em
-    }
-
-
-    .introduce_img_one img,
-    .introduce_img_two img,
-    .introduce_img_three img {
-        width: 400px;
-        padding: 20px 20px 40px 20px;
-
-    }
-
-    /* news */
-    .news_block h2 {
-        padding: 100px 0 25px;
     }
 
     .news_block_card {
@@ -801,22 +788,125 @@
 
     .card_word {
         padding-left: 10px;
+        width: 50%;
     }
 
-    /* author */
-    .author_word_logo {
-        padding: 50px;
+    .card_word span {
+        font-size: 15px;
+    }
+
+    .introduce_img_three {
+        display: none;
+    }
+
+    .introduce_block_title {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .introduce_block_one {
+        justify-content: center;
     }
 
     .author_word {
         width: 50%;
     }
 
-    .gallery_block_word{
+    .author_word_title {
+        justify-content: center;
+    }
+
+    .gallery_block_img_three {
+        display: none;
+    }
+
+    .gallery_block_word {
+        width: 50%;
+    }
+
+    .class_word_title {
+        justify-content: center;
+    }
+
+
+}
+
+/* 自適應1024 */
+@media screen and (max-width: 1024px) {
+    .first_page_img {
+        height: 400px;
+    }
+
+    .first_page_word {
+        top: 0;
+        font-size: 3.5em;
+    }
+
+    /* introduce */
+    .introduce_block {
+        margin-bottom: 50px;
+
+    }
+
+    .introduce_block_one {
+        justify-content: center;
+    }
+
+    .introduce_block_one h2 {
+        margin: auto;
+    }
+
+
+    .introduce_img_one img,
+    .introduce_img_two img {
+        width: 100%;
+        padding: 20px 20px 40px 20px;
+
+    }
+
+    /* news */
+    .news_block h2 {
+        padding: 100px 0 25px;
+    }
+
+
+    /* author */
+    .author_word_logo {
+        padding: 50px;
+    }
+
+    .author_word p {
         width: 100%;
     }
 
-    
+    .author_word,
+    .gallery_block_word {
+        width: 50%;
+    }
+
+    .class_block_img,
+    .acitve_block_img {
+        width: 50%;
+    }
+
+    .active_word_title {
+        justify-content: center;
+    }
+
+    .active_word,
+    .class_word {
+        width: 50%;
+    }
+
+    .contact_us_block_groupone {
+        padding-bottom: 1em;
+    }
+
+    .contact_us_block_grouptwo {
+        transform: translate(0);
+        align-self: end;
+        padding: 1em;
+    }
 
     /* 漂浮圖片 */
     .vage_img {
@@ -824,30 +914,24 @@
     }
 
     /* numbr */
-    .author_number {
-        top: -85%;
-        left: 10%;
-    }
 
-    .active_number {
-        top: 9%;
-        left: -5%;
-
-    }
-
-    .class_number {
-        top: 8%;
-        left: 73%;
-
-    }
-
-    .gallery_block_number {
-        top: -65%;
-    }
-
+    .gallery_block_number,
+    .author_number,
+    .active_number,
+    .class_number,
+    .gallery_block_number,
     .contact_us_number {
-        top: -65%;
+        font-size: 100px;
+        font-weight: 900;
+        transform: translateY(20px);
     }
+
+    .author_number {
+        font-size: 100px;
+        font-weight: 900;
+        transform: translateY(70px);
+    }
+
 }
 
 /* 自適應768 */
@@ -861,29 +945,18 @@
     }
 
     /* introduce */
-    .introduce_img_three img {
-        display: block;
-    }
 
     .introduce_block {
         padding-bottom: 0;
     }
 
-    .introduce_block_one h2 {
-        font-size: 1.5em;
-    }
-
     .introduce_block_one p {
         font-size: 16px;
-        width: 400px;
-        margin: auto;
 
     }
 
     .introduce_img_one img,
-    .introduce_img_two img,
-    .introduce_img_three img {
-        width: 200px;
+    .introduce_img_two img {
         padding: 20px 20px 30px 20px;
     }
 
@@ -897,11 +970,21 @@
     .news_card_two,
     .news_card_three {
         display: flex;
+        flex-direction: column;
+    }
 
+    .author_number {
+        transform: translateY(30px)
+    }
+
+
+    .gallery_block_img_two {
+        display: none;
     }
 
     .card_word {
         padding-left: 10px;
+        width: 100%;
     }
 
     /* sold_out */
@@ -927,83 +1010,60 @@
         text-align: center;
     }
 
-    .acitve_block_img img,
-    .class_block_img img,
-    .contact_us_img img,
-    .gallery_block img {
-        width: 300px;
-    }
-
     /* gallery */
 
     .gallery_block_img_two {
         align-self: center;
     }
 
-
-    /* number */
-    .author_number {
-        font-size: 100px;
-        font-weight: 900;
-        top: -40%;
-        left: 20%;
+    .contact_us_word {
+        width: 50%;
     }
 
-    .active_number {
-        font-size: 100px;
-        font-weight: 900;
-        top: 5%;
-        left: 15%;
-    }
-
-    .class_number {
-        font-size: 100px;
-        font-weight: 900;
-        top: 1%;
-        left: 15%;
-    }
-
-    .gallery_block_number {
-        font-size: 100px;
-        font-weight: 900;
-        top: -30%;
-    }
-
-    .contact_us_number {
-        font-size: 100px;
-        font-weight: 900;
-        top: -25%;
-        left: 15%;
-    }
 
     /* 上拉按鈕 */
     .back_top {
-        z-index: 999;
+        display: none;
     }
 
-    .back_top img {
-        width: 50px;
-        color: black;
-        background-color: #4a4f56;
+}
+
+@media screen and (max-width: 550px) {
+    .introduce_block_one h2 {
+        width: 100%;
+    }
+    .news_block,
+    .author_block,
+    .active_and_class_block{
+        margin-bottom: 0;
     }
 
-    .contact_us_word {
+
+    .active_block,
+    .class_block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .class_word {
+        order: 0;
+    }
+
+    .class_block_img,
+    .acitve_block_img {
+        width: 100%;
+    }
+
+    .author_word,
+    .gallery_block_word,
+    .contact_us_word,
+    .active_word,
+    .class_word {
         width: 100%;
     }
 
 }
 
-@media screen and (max-width: 568px) {
-
-    .news_card_one,
-    .news_card_two,
-    .news_card_three {
-        flex-direction: column;
-    }
-    .gallery_block_img_two{
-        display: none;
-    }
-}
 
 /* 自適應414 */
 @media screen and (max-width: 414px) {
@@ -1012,7 +1072,7 @@
     }
 
     .first_page_word {
-        font-size: 1.5em;
+        font-size: 3em;
     }
 
     /* introduce */
@@ -1028,14 +1088,10 @@
 
     .introduce_block_one p {
         width: 100%;
-
-
     }
 
-    .introduce_img_one img,
-    .introduce_img_two img,
-    .introduce_img_three img {
-        width: 150px;
+    .introduce_img_one img {
+        width: 300px;
     }
 
     .introduce_img_two img {
@@ -1063,25 +1119,16 @@
 
     .card_word {
         margin-top: 1em;
-        width: 18em;
         padding-left: 0;
     }
 
     /* sold_out */
     .sold_out {
-        font-size: 3em;
+        font-size: 5em;
     }
 
     .author_word {
         width: auto;
-    }
-
-    .active_block {
-        display: block;
-    }
-
-    .class_block {
-        flex-direction: column-reverse;
     }
 
     .class_block_img {
@@ -1092,14 +1139,21 @@
         padding: 80px 20px 20px;
     }
 
+    /* active */
+
+
     /* gallery */
-   
+    .gallery_block {
+        margin: 0;
+    }
 
     .gallery_block_img_one {
         display: none;
     }
 
+
     /* contact */
+
     .contact_us_img {
         text-align: center;
     }
@@ -1116,31 +1170,12 @@
         margin: auto;
     }
 
+    .contact_us_title {
+        justify-content: center;
+    }
+
+    /* number */
     .author_number {
-        top: -33%;
-        left: 4%;
-    }
-
-    .active_number {
-        top: -20%;
-        left: 15%;
-    }
-
-    .class_number {
-        top: 0%;
-        left: 15%;
-    }
-
-    .gallery_block_number {
-        top: -14%;
-        left: 12%;
-    }
-
-    .contact_us_number {
-        top: -25%;
-        left: 12%;
-    }
-    .active_word, .class_word{
-        width: 100%;
+        transform: translateY(30px);
     }
 }
