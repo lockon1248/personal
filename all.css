@@ -253,10 +253,6 @@ nav {
 
 
 @media screen and (max-width: 1024px) {
-    html{
-        font-size: 10px;
-    }
-    
 
     h2 {
         font-size: 45px;
@@ -382,6 +378,11 @@ nav {
     }
 
     .footer_logo {
+        display: none;
+    }
+
+    .news_card_two,
+    .news_card_three{
         display: none;
     }
 }

@@ -292,6 +292,11 @@ img {
     align-self: center;
 }
 
+.author_name {
+    color: #000;
+    font-weight: 900;
+}
+
 .author_word_logo {
     position: relative;
 }
@@ -722,10 +727,10 @@ img {
 
 /* 上拉按鈕 */
 .back_top {
-    position: fixed;
+    position:fixed;
     top: 80%;
-    right: 20px;
-    z-index: 2;
+    right: 30px;
+    z-index: 99;
     cursor: pointer;
     color: transparent;
 }
@@ -782,10 +787,6 @@ img {
         bottom: 0;
     }
 
-    .sold_out {
-        font-size: 4em;
-    }
-
     .card_word {
         padding-left: 10px;
         width: 50%;
@@ -833,6 +834,11 @@ img {
 
 /* 自適應1024 */
 @media screen and (max-width: 1024px) {
+
+    .back_top {
+        display: none;
+    }
+
     .first_page_img {
         height: 400px;
     }
@@ -855,8 +861,7 @@ img {
     .introduce_block_one h2 {
         margin: auto;
     }
-
-
+ 
     .introduce_img_one img,
     .introduce_img_two img {
         width: 100%;
@@ -865,9 +870,9 @@ img {
     }
 
     /* news */
-    .news_block h2 {
+     .news_block h2 {
         padding: 100px 0 25px;
-    }
+    } 
 
 
     /* author */
@@ -973,6 +978,7 @@ img {
         flex-direction: column;
     }
 
+
     .author_number {
         transform: translateY(30px)
     }
@@ -987,10 +993,7 @@ img {
         width: 100%;
     }
 
-    /* sold_out */
-    .sold_out {
-        left: 10%;
-    }
+
 
     /* author */
     .author_pic img {
@@ -1022,10 +1025,7 @@ img {
 
 
     /* 上拉按鈕 */
-    .back_top {
-        display: none;
-    }
-
+   
 }
 
 @media screen and (max-width: 550px) {
@@ -1113,19 +1113,16 @@ img {
         flex-direction: column;
     }
 
-    .card_img img {
-        width: 300px;
-    }
-
     .card_word {
         margin-top: 1em;
         padding-left: 0;
     }
 
-    /* sold_out */
-    .sold_out {
-        font-size: 5em;
+    .sold_out{
+        font-size: 4em;
     }
+
+ 
 
     .author_word {
         width: auto;
