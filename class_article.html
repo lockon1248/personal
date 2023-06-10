@@ -20,6 +20,7 @@
     <!-- self -->
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/artical.css">
+    <script src="./js/class_article.js"></script>
 </head>
 
 <body>
@@ -247,28 +248,7 @@
         <div class="tibame">
             <span>本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。</span>
         </div>
-    </footer>
-
-    <!-- 貓頭鷹首頁幻燈片 -->
-    <script>
-        var owl = $('.owl-carousel');
-        owl.owlCarousel({
-            items: 1,
-            loop: true,
-            margin: 10,
-            autoplay: true,
-            autoplayTimeout: 2000,
-            autoplayHoverPause: false,
-
-
-        });
-        $('.play').on('click', function () {
-            owl.trigger('play.owl.autoplay', [2000])
-        })
-        $('.stop').on('click', function () {
-            owl.trigger('stop.owl.autoplay')
-        })
-    </script>
+    </footer>>
 </body>
 
 </html>

@@ -12,14 +12,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/all.css">
-    <link rel="stylesheet" href="./css/first_page_body.css">
-
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
-    <script src="./first.js"></script>
-
+    <script src="./js/first.js"></script>
+    
+    <!-- self -->
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/first_page_body.css">
 
 </head>
 <style>
@@ -120,8 +121,8 @@
                 </div>
             </div>
             <h2>最新消息</h2>
-            <div class="news_block_card">
-                <div class="news_card_one" id="newcard">
+            <div class="news_block_card owl-carousel">
+                <div class="news_card_one item" id="newcard">
                     <div class="card_img">
                         <img src="./personal_project_picture/Polaroid/first_page_news_one.jpg">
                         <div class="card_shadow">
@@ -142,7 +143,7 @@
                         <span class="click">課程已售完</span>
                     </div>
                 </div>
-                <div class="news_card_two" id="newcard">
+                <div class="news_card_two item" id="newcard">
                     <div class="card_img">
                         <img src="./personal_project_picture/Polaroid/first_page_news_two.jpg">
                         <div class="card_shadow">
@@ -162,7 +163,7 @@
                         <span class="click">課程已售完</span>
                     </div>
                 </div>
-                <div class="news_card_three" id="newcard">
+                <div class="news_card_three item" id="newcard">
                     <div class="card_img">
                         <img src="./personal_project_picture/Polaroid/first_page_news_three.jpg">
                     </div>
@@ -482,24 +483,22 @@
     <script>
         $(function () {
 
-            if (window.height < 768) {
-                $('#newcard').addClass('owl-carousel')
-                var owl = $('.owl-carousel');
-                owl.owlCarousel({
-                    items: 1,
-                    loop: true,
-                    margin: 10,
-                    autoplay: true,
-                    autoplayTimeout: 1000,
-                    autoplayHoverPause: true
-                });
-                $('.play').on('click', function () {
-                    owl.trigger('play.owl.autoplay', [1000])
-                })
-                $('.stop').on('click', function () {
-                    owl.trigger('stop.owl.autoplay')
-                })
-            }
+            $('#newcard').addClass('owl-carousel')
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 1000,
+                autoplayHoverPause: true
+            });
+            $('.play').on('click', function () {
+                owl.trigger('play.owl.autoplay', [1000])
+            })
+            $('.stop').on('click', function () {
+                owl.trigger('stop.owl.autoplay')
+            })
         });
 
 

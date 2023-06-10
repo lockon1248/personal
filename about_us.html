@@ -21,6 +21,7 @@
 <!-- self -->
 <link rel="stylesheet" href="./css/all.css">
 <link rel="stylesheet" href="./css/about_us.css">
+<script src="./js/about_us.js"></script>
 
 
 
@@ -266,64 +267,5 @@
             <span>本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。</span>
         </div>
     </footer>
-
-
-    <!-- 作品幻燈片 -->
-    <!-- <script>
-        function load() {
-            var list = document.querySelectorAll('.teacher_work_inner');
-            var boxes = document.querySelectorAll('.teacher_work');
-            console.log(list);
-
-            list.forEach(function (trun, index) {
-                var box = boxes[index];
-                let computedStyle = getComputedStyle(trun);
-                let left = parseInt(computedStyle.left) || 0;
-                let timer;
-
-                function move() {
-                    timer = setInterval(() => {
-                        left -= 2;
-                        if (left == - (3 * 500 + 6 * 16)) {
-                            left = 0;
-                        }
-                        trun.style.left = left + 'px';
-                    }, 20);
-                }
-
-                move();
-
-                box.onmouseover = function () {
-                    clearInterval(timer);
-                };
-
-                box.onmouseleave = function () {
-                    move();
-                };
-            });
-        }
-        document.addEventListener('DOMContentLoaded', load);
-    </script> -->
-    <!-- 貓頭鷹首頁幻燈片 -->
-    <script>
-        var owl = $('.owl-carousel');
-        owl.owlCarousel({
-            items: 1,
-            loop: true,
-            margin: 10,
-            autoplay: true,
-            autoplayTimeout: 2000,
-            autoplayHoverPause: false,
-
-
-        });
-        $('.play').on('click', function () {
-            owl.trigger('play.owl.autoplay', [2000])
-        })
-        $('.stop').on('click', function () {
-            owl.trigger('stop.owl.autoplay')
-        })
-    </script>
 </body>
-
 </html>

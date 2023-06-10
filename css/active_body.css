@@ -10,7 +10,7 @@
 
 .active_block_one {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .active_block_img_one {
@@ -35,7 +35,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0 15px;
+    padding: 0 75px;
 }
 
 .pay_class_word_title {
@@ -101,14 +101,21 @@
     color: #ffffff;
 }
 
+
+.dividing_line{
+    height: 100px;
+    width: 80%;
+    margin: auto;
+    border-bottom: 1px solid #FFB800;
+
+}
+
 .more_active {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 50px;
 }
-
-
 
 
 
@@ -125,12 +132,12 @@
     width: 400px;
     display: flex;
     flex-direction: column;
+    
 }
 
 .travel_card img {
     width: 100%;
 }
-
 
 .travel_img {
     display: flex;
@@ -139,6 +146,21 @@
     padding: 20px 20px 60px 20px;
     background-color: #ffffff;
     margin: 0 15px;
+}
+
+.travel_img_inner{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.travel_img img{
+     transform:scale(1,1);
+    transition: all 1s ease-out;
+}
+
+.travel_img:hover img{
+    transform:scale(1.2,1.2);
 }
 
 /* 小卡片內容 */
@@ -167,9 +189,19 @@
     padding: 20px 20px 0;
 }
 
+.travel_word_price_and_place span{
+    color: #FFB800;
+}
+
 .travel_word {
     padding-top: 10px;
 
+}
+
+.travel_word_inf{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
 }
 
 .travel_word h4 {
@@ -178,8 +210,8 @@
 
 
 .travel_word_center {
+    flex-grow: 1;
     padding: 10px 20px 0;
-    margin: auto;
 }
 
 .travel_word_price_and_place span{
@@ -210,8 +242,9 @@
 }
 
 @media screen and (max-width: 1280px) {
-    .active_block_img_one {
-        width: 100%;
+    .active_block_img_one{
+        width: 80%;
+        margin: auto; 
         padding: 15px;
     }
 
@@ -224,6 +257,10 @@
         margin: auto;
     }
 
+    .pay_class_word_block{
+        padding: 0;
+    }
+
     .teacher_name span {
         font-size: 24px;
     }
@@ -234,8 +271,18 @@
 }
 
 @media screen and (max-width: 550px) {
+    .active_block_img_one{
+        width: 100%;
+    }
+
+    .pay_class_word_block{
+        padding: 15px;
+    }
+
     .active_block_word_one {
         width: 100%;
-
+    }
+    .price{
+        font-size: 25px;
     }
 }

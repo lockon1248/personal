@@ -20,6 +20,7 @@
     <!-- self -->
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/contact_body.css">
+    <script src="./js/contact_us.js"></script>
 </head>
 
 <body>
@@ -250,49 +251,9 @@
             <span>本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。</span>
         </div>
     </footer>
-
-    <script>
-        $(document).ready(function () {
-            $(".question").click(function () {
-                let isOpen = $(this).siblings(".answer").is(":visible");
-                $(".answer").slideUp();
-                $(this).removeClass('active')
-                if (isOpen) return;
-                $(this).siblings(".answer").slideDown();
-                $(this).addClass('active')
-                $(this).parent().siblings().find(".answer").slideUp();
-            });
-
-        });
-    </script>
-     <!-- 貓頭鷹首頁幻燈片 -->
-     <script>
-        var owl = $('.owl-carousel');
-        owl.owlCarousel({
-            items: 1,
-            loop: true,
-            margin: 10,
-            autoplay: true,
-            autoplayTimeout: 2000,
-            autoplayHoverPause: false,
-
-        });
-        $('.play').on('click', function () {
-            owl.trigger('play.owl.autoplay', [2000])
-        })
-        $('.stop').on('click', function () {
-            owl.trigger('stop.owl.autoplay')
-        })
-    </script>
     <script>
        let question = document.querySelector(".question")
        let beforeStyle = window.getComputedStyle(question, ":before")
-       
-        
-            
-        
-
-
     </script>
 
 </body>
