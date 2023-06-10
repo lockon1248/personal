@@ -406,15 +406,8 @@
     }
 
 
-
-    let a = document.querySelector(".pay_class_word_block");
-    console.log(a.innerText);
-
-    function showWord(e) {
-        document.querySelector(".pay_class_word_block").text = e.target.text;
-        console.log(e.target);
-    };
-
+    // let a = document.querySelector(".pay_class_word_block");
+    // console.log(a.innerText);
     function showWordInner() {
         let imgs = document.querySelectorAll("#small");
         for (let i = 0; i < imgs.length; i++) {
@@ -423,6 +416,15 @@
         }
     }
 
+
+
+    function showWord(e) {
+       let text = document.querySelector(".pay_class_word_block");
+       console.log(text)
+        text.innerText =e.target.text ;
+    };
+
+  
 
 
 
