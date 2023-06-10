@@ -250,30 +250,7 @@ nav {
 
 /* 自適應 */
 
-
-
-@media screen and (max-width: 1024px) {
-
-    h2 {
-        font-size: 45px;
-    }
-
-    h3 {
-        font-family: 'Noto Sans TC', sans-serif;
-        font-size: 35px;
-    }
-
-    h4 {
-        font-family: 'Noto Sans TC', sans-serif;
-        font-size: 30px;
-    }
-
-    p {
-
-        font-family: 'Noto Sans TC', sans-serif;
-        font-size: 20px;
-    }
-
+@media screen and (max-width: 1130px) {
     .header {
         background-color: #3d5482;
         position: relative;
@@ -326,6 +303,34 @@ nav {
         display: none;
         background-color: #3d5482;
     }
+
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+    h2 {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-family: 'Noto Sans TC', sans-serif;
+        font-size: 35px;
+    }
+
+    h4 {
+        font-family: 'Noto Sans TC', sans-serif;
+        font-size: 30px;
+    }
+
+    p {
+
+        font-family: 'Noto Sans TC', sans-serif;
+        font-size: 20px;
+    }
+
+    
     .footer_icon_block i{
         font-size: 4em;
     }

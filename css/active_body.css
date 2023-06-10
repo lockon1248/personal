@@ -1,0 +1,241 @@
+.big_img_block {
+    width: 100%;
+}
+
+.big_img_block img {
+    width: 100%;
+}
+
+
+
+.active_block_one {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.active_block_img_one {
+    width: 50%;
+}
+
+.active_block_img_one img {
+    width: 100%;
+}
+
+.active_block_img_two {
+    width: 50%;
+}
+
+.active_block_img_two img {
+    width: 100%;
+}
+
+
+/* 卡片 */
+.pay_class_word_block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+.pay_class_word_title {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #FFB800;
+}
+
+.teacher_name {
+    display: flex;
+    padding-top: 15px;
+
+}
+
+.teacher_name span {
+    font-size: 30px;
+}
+
+.teacher_name p {
+    align-self: end;
+}
+
+.class_date {
+    padding: 1px 0;
+}
+
+.class_word {
+    flex-grow: 1;
+    position: relative;
+}
+
+.class_word .place {
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+.class_word .place span {
+    color: #FFB800;
+    font-weight: 900;
+}
+
+
+.price_signup {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.price {
+    font-size: 30px;
+    align-self: flex-end;
+    color: #FFB800;
+}
+
+.price_signup a {
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.price span {
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.more_active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+
+
+
+
+/* 小卡片 */
+.center_block {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+
+.travel_card {
+    padding-bottom: 10px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.travel_card img {
+    width: 100%;
+}
+
+
+.travel_img {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    padding: 20px 20px 60px 20px;
+    background-color: #ffffff;
+    margin: 0 15px;
+}
+
+/* 小卡片內容 */
+.travel_word_title {
+    padding: 20px 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.travel_word_teacher {
+    display: flex;
+}
+
+.travel_word_teacher h5 {
+    display: flex;
+    align-self: center;
+    padding-right: 5px;
+}
+
+.travel_word_title span {
+    display: flex;
+    align-self: center;
+}
+
+.travel_word_price_and_place {
+    padding: 20px 20px 0;
+}
+
+.travel_word {
+    padding-top: 10px;
+
+}
+
+.travel_word h4 {
+    text-align: center;
+}
+
+
+.travel_word_center {
+    padding: 10px 20px 0;
+    margin: auto;
+}
+
+.travel_word_price_and_place span{
+    padding: 5px 0;
+}
+
+
+
+/* stick */
+.card_stick_sure span {
+    padding: 1px 10px;
+    background-color: #FD5A5A;
+    color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    top: 20%;
+}
+
+.card_stick_real {
+    padding: 1px 10px;
+    background-color: #4CB650;
+    color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+@media screen and (max-width: 1280px) {
+    .active_block_img_one {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .active_block_one {
+        display: block;
+    }
+
+    .active_block_word_one {
+        width: 80%;
+        margin: auto;
+    }
+
+    .teacher_name span {
+        font-size: 24px;
+    }
+
+    .class_word .place {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .active_block_word_one {
+        width: 100%;
+
+    }
+}
