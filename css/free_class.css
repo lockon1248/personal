@@ -21,6 +21,7 @@
 }
 
 .class_card {
+    padding: 0 20px;
     width: 440px;
     margin: 0em;
     display: flex;

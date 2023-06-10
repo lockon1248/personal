@@ -67,6 +67,7 @@
 }
 
 .cross{
+    cursor: pointer;
     top: 5%;
     right: 5%;
     position: absolute;
