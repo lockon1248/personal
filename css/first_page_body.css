@@ -941,12 +941,17 @@ img {
 
 /* 自適應768 */
 @media screen and (max-width: 768px) {
+    .first_page_img {
+        height: 450px;
+    }
+
+
     .big_img_block {
         margin-bottom: 0;
     }
 
     .first_page_word {
-        font-size: 3em;
+        font-size: 40px;
     }
 
     /* introduce */
@@ -1029,6 +1034,15 @@ img {
 }
 
 @media screen and (max-width: 550px) {
+    .first_page_img {
+        height: 400px;
+    }
+
+
+    .first_page_word {
+        font-size: 30px;
+    }
+
     .introduce_block_one h2 {
         width: 100%;
     }
@@ -1072,7 +1086,7 @@ img {
     }
 
     .first_page_word {
-        font-size: 3em;
+        font-size: 20px;
     }
 
     /* introduce */

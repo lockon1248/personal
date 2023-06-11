@@ -66,9 +66,13 @@ $(function () {
                 }
             })
         }
+        else{
+            $('.news_block').css({
+                dispaly: 'block',
+                opacity:  1,
+            })
+        }  
     })
-
-
 });
 
 

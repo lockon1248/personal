@@ -47,6 +47,5 @@ $(function () {
             move();
         };
     });
-    document.addEventListener('DOMContentLoaded', load);
 })
 

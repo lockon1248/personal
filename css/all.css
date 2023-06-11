@@ -395,6 +395,12 @@ nav {
 
 
 @media screen and (max-width: 414px) {
+    
+    h2 {
+        font-size: 25px;
+    }
+
+    
     h3 {
         font-size: 1em;
     }

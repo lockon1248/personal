@@ -286,3 +286,13 @@
         font-size: 25px;
     }
 }
+
+
+
+@media screen and (max-width: 550px) {
+
+    .travel_img{
+        margin: auto;
+    }
+}
+
