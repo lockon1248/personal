@@ -99,6 +99,7 @@ img {
 }
 
 .logo_name {
+    margin:0 40px;
     flex-grow: 1;
     align-self: center;
     display: flex;
@@ -251,7 +252,7 @@ nav {
 
 /* 自適應 */
 
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 1280px) {
     .header {
         background-color: #3d5482;
         position: relative;
@@ -279,16 +280,21 @@ nav {
         margin-right: 10px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
+
+        position: relative;
     }
 
     .hamburger span {
-        display: inline-block;
+       position: absolute;
         height: 8px;
         width: 40px;
         background-color: #3d5482;
         border-radius: 5px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        rotate: 0deg;
+        transition: top .5s .3s, rotate .5s;
     }
 
     #menu_switch:checked+.header .main_nav {
@@ -303,6 +309,39 @@ nav {
         display: none;
         background-color: #3d5482;
     }
+
+    .hamburger span:nth-child(1){
+        top: 6.5px;
+        transition: top .5s .3s, rotate .5s;
+
+    }
+    .hamburger span:nth-child(2){
+        top: 21px;
+        opacity: 1;
+        transition: opacity .5s
+        
+    }
+    .hamburger span:nth-child(3){
+        top: 35.5px;
+        transition: top .5s .3s, rotate .5s;
+    }
+
+    #menu_switch:checked +.header .hamburger span:nth-child(1){
+        top: 21px;
+        rotate: 45deg;
+        transition: top .5s, rotate .5s .3s;
+    }
+    #menu_switch:checked +.header .hamburger span:nth-child(2){
+        /* display: none; */
+        opacity: 0;
+        transition: opacity .5s
+    }
+    #menu_switch:checked +.header .hamburger span:nth-child(3){
+        top: 21px;
+        rotate: -45deg;
+        transition: top .5s, rotate .5s .3s;
+    }
+
 
 }
 

@@ -121,9 +121,11 @@
 
 
 /* 小卡片 */
+
 .center_block {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    row-gap: 50px;
     padding: 50px 0;
     flex-wrap: wrap;
 }
@@ -133,7 +135,6 @@
     width: 400px;
     display: flex;
     flex-direction: column;
-
 }
 
 .travel_card img {
@@ -186,17 +187,33 @@
     align-self: center;
 }
 
-.travel_word_price_and_place {
-    padding: 20px 20px 0;
+.travel_word_place,
+.travel_word_price{
+    padding: 0 20px;
+}
+.travel_word_price{
+    display: flex;
+}
+.travel_word_price p{
+    flex-grow: 1;
+}
+.travel_word_price a{
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 5px;
+    display: flex;
+    align-self: center;
 }
 
-.travel_word_price_and_place span {
+
+
+.travel_word_place span {
     color: #FFB800;
 }
 
 .travel_word {
     padding-top: 10px;
-
+    /* flex-grow: 1; */
 }
 
 .travel_word_inf {

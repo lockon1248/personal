@@ -17,11 +17,9 @@ label {
     font-weight: bold;
 }
 
-/* title_block */
 
 /* personal_block */
 .contact_block {
-
     border-radius: 10px;
     width: 50%;
     margin: auto;
@@ -119,6 +117,10 @@ textarea {
 }
 
 /* map */
+.map h2{
+    margin: 30px 0 10px;
+}
+
 .map {
     margin: auto;
     text-align: center;
@@ -130,6 +132,11 @@ textarea {
 }
 
 /* FAQ */
+.question_block h2{
+    margin: 30px 0 20px;
+
+}
+
 .question_block {
     width: 50%;
     margin: auto;
@@ -229,22 +236,22 @@ textarea {
     }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 530px) {
     .contact_block {
         min-width: 80%;
         margin-top: 2em;
     }
-
     .question_block {
         min-width: 70%;
     }
 
     .google_map iframe {
 
-        max-width: 70%;
+        max-width: 80%;
     }
 
     .google_map iframe {
         min-width: 90%;
     }
 }
+
