@@ -188,10 +188,6 @@ textarea {
     transform: rotate(90deg);
 }
 
-.question_list:checked .question p::before {
-    transform: rotate(90deg);
-}
-
 
 /* 自適應 */
 

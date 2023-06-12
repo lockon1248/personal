@@ -9,26 +9,20 @@ $(function () {
         autoplayHoverPause: false,
 
     });
-    $('.play').on('click', function () {
-        owl.trigger('play.owl.autoplay', [2000])
-    })
-    $('.stop').on('click', function () {
-        owl.trigger('stop.owl.autoplay')
-    })
 
-
-    var list = document.querySelectorAll('.teacher_work_inner');
-    var boxes = document.querySelectorAll('.teacher_work');
+//
+    const list = document.querySelectorAll('.teacher_work_inner');
+    const boxes = document.querySelectorAll('.teacher_work');
     console.log(list);
 
     list.forEach(function (trun, index) {
-        var box = boxes[index];
+        const box = boxes[index];
         let computedStyle = getComputedStyle(trun);
         let left = parseInt(computedStyle.left) || 0;
-        let timer;
+        // let timer;
 
         function move() {
-            timer = setInterval(() => {
+           let timer = setInterval(() => {
                 left -= 2;
                 if (left == - (3 * 500 + 6 * 16)) {
                     left = 0;
