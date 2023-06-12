@@ -296,7 +296,6 @@ nav {
     }
 
     .main_nav {
-        height: 100vh;
         width: 100vw;
         position: absolute;
         left: 0;
@@ -332,9 +331,6 @@ nav {
     }
 
     
-    .footer_icon_block i{
-        font-size: 4em;
-    }
 }
 
 
@@ -390,6 +386,10 @@ nav {
     .news_card_two,
     .news_card_three{
         display: none;
+    }
+
+    .footer_icon_block i{
+        font-size: 3em;
     }
 }
 

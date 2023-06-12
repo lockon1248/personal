@@ -102,7 +102,7 @@
 }
 
 
-.dividing_line{
+.dividing_line {
     height: 100px;
     width: 80%;
     margin: auto;
@@ -132,7 +132,7 @@
     width: 400px;
     display: flex;
     flex-direction: column;
-    
+
 }
 
 .travel_card img {
@@ -148,19 +148,19 @@
     margin: 0 15px;
 }
 
-.travel_img_inner{
+.travel_img_inner {
     width: 100%;
     overflow: hidden;
 }
 
 
-.travel_img img{
-     transform:scale(1,1);
+.travel_img img {
+    transform: scale(1, 1);
     transition: all 1s ease-out;
 }
 
-.travel_img:hover img{
-    transform:scale(1.2,1.2);
+.travel_img:hover img {
+    transform: scale(1.2, 1.2);
 }
 
 /* 小卡片內容 */
@@ -189,7 +189,7 @@
     padding: 20px 20px 0;
 }
 
-.travel_word_price_and_place span{
+.travel_word_price_and_place span {
     color: #FFB800;
 }
 
@@ -198,7 +198,7 @@
 
 }
 
-.travel_word_inf{
+.travel_word_inf {
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -214,7 +214,7 @@
     padding: 10px 20px 0;
 }
 
-.travel_word_price_and_place span{
+.travel_word_price_and_place span {
     padding: 5px 0;
 }
 
@@ -242,9 +242,9 @@
 }
 
 @media screen and (max-width: 1280px) {
-    .active_block_img_one{
+    .active_block_img_one {
         width: 80%;
-        margin: auto; 
+        margin: auto;
         padding: 15px;
     }
 
@@ -257,7 +257,7 @@
         margin: auto;
     }
 
-    .pay_class_word_block{
+    .pay_class_word_block {
         padding: 0;
     }
 
@@ -271,28 +271,33 @@
 }
 
 @media screen and (max-width: 550px) {
-    .active_block_img_one{
+    .active_block_img_one {
         width: 100%;
     }
 
-    .pay_class_word_block{
+    .pay_class_word_block {
         padding: 15px;
     }
 
     .active_block_word_one {
         width: 100%;
     }
-    .price{
+
+    .price {
         font-size: 25px;
     }
-}
 
-
-
-@media screen and (max-width: 550px) {
-
-    .travel_img{
+    .travel_img {
         margin: auto;
     }
+
+
 }
 
+
+
+@media screen and (max-width: 414px) {
+    .travel_img {
+        width: 90%;
+    }
+}
