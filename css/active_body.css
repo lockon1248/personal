@@ -11,6 +11,7 @@
 .active_block_one {
     display: flex;
     justify-content: center;
+    padding:0 10px;
 }
 
 .active_block_img_one {
@@ -297,6 +298,9 @@
 
 
 @media screen and (max-width: 414px) {
+    .travel_card{
+        width: auto;
+    }
     .travel_img {
         width: 90%;
     }
