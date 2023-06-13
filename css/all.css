@@ -99,7 +99,6 @@ img {
 }
 
 .logo_name {
-    margin:0 40px;
     flex-grow: 1;
     align-self: center;
     display: flex;
