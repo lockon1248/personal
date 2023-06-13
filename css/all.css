@@ -135,16 +135,9 @@ nav {
     display: flex;
     flex-direction: column;
     text-align: center;
-}
-
-.header_word a {
     font-size: 1.5em;
     font-weight: 900;
     padding: 0 .1em;
-}
-
-.header_word .header_en {
-    font-size: 1em;
 }
 
 

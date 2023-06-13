@@ -280,6 +280,13 @@
     }
 }
 
+@media screen and (max-width: 500px){
+    .pay_inf_block {
+        display: block;
+        max-width: 100%;
+
+}
+}
 
 @media screen and (max-width: 414px) {
 
@@ -296,6 +303,7 @@
     .class_inf_word{
         padding: 0;
     }
+    
     
     
 }
