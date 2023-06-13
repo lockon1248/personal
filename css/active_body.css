@@ -308,6 +308,10 @@
     .travel_img {
         margin: auto;
     }
+    .card_stick_real,
+    .card_stick_sure span{
+        padding: 1px 5px;
+    }
 
 
 }
