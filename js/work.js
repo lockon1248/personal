@@ -33,7 +33,6 @@ $(function () {
         autoplayTimeout: 2000,
         autoplayHoverPause: false,
 
-
     });
 
 

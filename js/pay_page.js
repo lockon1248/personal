@@ -9,5 +9,15 @@ $(function () {
         autoplayHoverPause: false,
 
     });
+
+    
+    $('.invoice_checkbox input').click(function () {
+        if ($(this).prop('checked')) {
+            $('.invoice_checkbox input:checkbox').prop('checked', false);
+            $(this).prop('checked', true);
+        }
+    });
+
+
 })
 
