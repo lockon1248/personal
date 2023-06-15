@@ -32,7 +32,8 @@
 .card_img {
     position: relative;
 }
-.card_img a{
+
+.card_img a {
     position: relative;
     display: block;
 }
@@ -84,19 +85,21 @@
     transform: translateY(-50%);
     text-align: start;
 }
-.float{
+
+.float {
     opacity: 1;
     transition: opacity .5s;
 }
 
 @media screen and (max-width: 768px) {
-     .card_img img {
+    .card_img img {
         height: 300px;
         padding: 20px;
     }
 
     .card_title {
         position: static;
+        padding: 1em 0em 10px;
     }
 
     .card_img {
@@ -109,12 +112,21 @@
 
     .card_word {
         opacity: 1;
+        display: -webkit-inline-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        overflow: hidden;
     }
 
     .card_word p {
         padding: 0;
         position: static;
         transform: translateY(0);
+    }
+
+    .class_card {
+        width: 100%;
+
     }
 }
 
@@ -123,5 +135,5 @@
         width: 100%;
     }
 
-  
+
 }
