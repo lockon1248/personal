@@ -1,208 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>付費頁面</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
-    <!-- 貓頭鷹 -->
-    <link rel="stylesheet" href="./js/OwlCarousel/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="/js/OwlCarousel/dist/assets/owl.theme.default.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="./js/OwlCarousel/dist/owl.carousel.min.js"></script>
-    <script src="./js/pay_page.js"></script>
-    <!-- self -->
-    <link rel="stylesheet" href="./css/all.css">
-    <link rel="stylesheet" href="./css/pay_page.css">
-
-</head>
-
-<body>
-    <input type="checkbox" id="menu_switch">
-    <header class="header">
-        <div class="logo">
-            <img src="./personal_project_picture/logo/Component 3.svg">
-        </div>
-        <div class="logo_name">
-            <h2><a href="./index.html">飛鳥時攝</a></h2>
-        </div>
-        <label for="menu_switch" class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <nav class="main_nav">
-            <a href="./index.html" class="header_word">
-                <span>首頁</span>
-                <span>home page</span>
-            </a>
-            <a href="./about_us.html" class="header_word">
-                <span>關於我們</span>
-                <span> about us</span>
-            </a>
-            <a href="./class_introduce.html" class="header_word">
-                <span>課程簡介</span>
-                <span>class introduce</span>
-            </a>
-            <a href="./active.html" class="header_word">
-                <span>約拍活動</span>
-                <span>active</span>
-            </a>
-            <a href="./work.html" class="header_word">
-                <span>作品展示</span>
-                <span>art work</span>
-            </a>
-            <a href="./contact_us.html" class="header_word">
-                <span>聯絡我們</span>
-                <span>contact</span>
-            </a>
-        </nav>
-    </header>
-    <div class="page_body">
-        <div class="big_img_block owl-carousel">
-            <img src="./personal_project_picture/bigpic/big_pic_work.jpg" alt="">
-            <img src="./personal_project_picture/bigpic/bic_pic_active.jpg" alt="">
-            <img src="./personal_project_picture/bigpic/big_pic_abouts.jpg" alt="">
-            <img src="./personal_project_picture/bigpic/big_pic_paypage.jpg" alt="">
-            <img src="./personal_project_picture/bigpic/big_pic_artilce.png" alt="">
-            <img src="./personal_project_picture/bigpic/big_pic_free.jpg" alt="">
-            <img src="./personal_project_picture/bigpic/big_pic_payclass.jpg" alt="">
-            <img src="./personal_project_picture/bigpic/big_pic_contact.jpg" alt="">
-        </div>
-        <div class="title_block">
-            <h2>報名課程</h2>
-        </div>
-        <div class="class_line"></div>
-        <div class="class_inf">
-            <div class="class_inner">
-                <div class="class_inner_top">
-                    <div class="class_inf_img">
-                        <img src="./personal_project_picture/pay/pay_page.jpg" alt="">
-                    </div>
-                    <div class="class_inf_word">
-                        <h5>台中教室-第60期風景攝影平日基礎班</h5>
-                        <div class="class_inf_word_inner">
-                            <p>實體課程</p>
-                            <p>5/23(二)09:00開課</p>
-                            <p>授課時長:八小時</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="class_inner_bottom">
-                    <div class="class_inf_price">
-                        <span>TWD:</span>
-                        9,300
-                        <span>元</span>
-                    </div>
-                    <div class="garbage_can">
-                        <button>
-                            <i class="fa-regular fa-trash-can"></i>
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="class_line"></div>
-        <div class="total_price">
-            <span>總結:TWD:</span>9,300<span>元</span>
-        </div>
-        <div class="pay_inf_block">
-            <div class="pay_personal_inf_block">
-                <div class="pay_inf">
-                    <h4>付款資訊:</h4>
-                    <p>此資訊同時做為聯繫人資訊使用，請確實填寫。</p>
-                </div>
-                <div class="pay_inf_input">
-                    <label for="">付款人姓名:</label><br>
-                    <input type="text" placeholder="請輸入姓名">
-                </div>
-                <div class="pay_inf_input">
-                    <label for="">付款人電話:</label><br>
-                    <input type="tel" placeholder="請輸入電話">
-                </div>
-                <div class="pay_inf_input">
-                    <label for="">付款人信箱:</label><br>
-                    <input type="email" placeholder="請輸入電子信箱">
-                </div>
-            </div>
-            <div class="invoice_inf_block">
-                <div class="invoice_inf">
-                    <h4>電子發票:</h4>
-                    <div class="invoice_checkbox">
-                        <label for="personal"> <input type="checkbox" id="personal">個人發票</label>
-                        <label for="union"><input type="checkbox" id="union">統編發票</label>
-                        <label for="donate"><input type="checkbox" id="donate">捐贈發票</label>
-                        <label for="paper"><input type="checkbox" id="paper">紙本發票</label>
-                    </div>
-                </div>
-                <div class="invoice">
-                    <label for="">發票載具-手機條碼<span>(若選紙本發票則非必填)</span>:</label><br>
-                    <span>請輸入斜線/加上七位英數的條碼</span>
-                    <input type="email" placeholder="請輸入條碼">
-                </div>
-                <div class="invoice">
-                    <label for="">地址:</label><span>(若選擇電子發票則非必填)</span>:<br>
-                    <span>作為寄送紙本發票使用，請填寫可收宅配或郵寄掛號之地址</span><br>
-                    <input type="email" placeholder="請輸入地址">
-                </div>
-            </div>
-        </div>
-        <div class="send_button">
-            <button href="#">點我送出</button>
-        </div>
-        <div class="background_bar">
-            <img src="./personal_project_picture/tool/line.svg" alt="">
-        </div>
-    </div>
-    <footer class="footer">
-        <div class="footer_container">
-            <div class="footer_logo">
-                <div class="footer_logo_img">
-                    <img src="./personal_project_picture/logo/Component 3.svg">
-                </div>
-                <div class="logo_name">
-                    <h3><a href="./index.html">飛鳥時攝</a></h3>
-                    <span>從今開始，學著紀錄美好瞬間</span>
-                </div>
-            </div>
-            <div class="footer_icon">
-                <h4>follow us on</h4>
-                <div class="footer_icon_block">
-                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                </div>
-                <div class="address">
-                    <span>地址:320桃園市中壢區復興路46號9樓</span>
-                    <span>電話：03-4251108</span>
-                </div>
-            </div>
-            <div class="content_block_one">
-                <span>課程服務</span>
-                <a href="./freeclass.html">免費課程</a>
-                <a href="./pay_class.html">付費課程</a>
-                <a href="./active.html">約拍活動</a>
-            </div>
-            <div class="content_block_two">
-                <span>關於我們</span>
-                <a href="./about_us.html">關於我們</a>
-                <a href="./work.html">作品展示</a>
-                <a href="./contact_us.html">聯絡我們</a>
-            </div>
-        </div>
-        <div class="tibame">
-            <span>本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。</span>
-        </div>
-    </footer>
-
-</body>
-
+<html lang="zh-Hant">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>付費頁面</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet" />
+		<!-- 貓頭鷹 -->
+		<link rel="stylesheet" href="./js/OwlCarousel/dist/assets/owl.carousel.min.css" />
+		<link rel="stylesheet" href="/js/OwlCarousel/dist/assets/owl.theme.default.min.css" />
+		<!-- self -->
+		<link rel="stylesheet" href="./css/all.css" />
+		<link rel="stylesheet" href="./css/pay_page.css" />
+	</head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+	<script src="./js/OwlCarousel/dist/owl.carousel.min.js"></script>
+	<script src="./js/pay_page.js"></script>
+	<body>
+		<input type="checkbox" id="menu_switch" />
+		<header class="header">
+			<div class="logo">
+				<img src="./personal_project_picture/logo/Component 3.svg" />
+			</div>
+			<div class="logo_name">
+				<h2><a href="./index.html">飛鳥時攝</a></h2>
+			</div>
+			<label for="menu_switch" class="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+			<nav class="main_nav">
+				<a href="./index.html" class="header_word">
+					<span>首頁</span>
+					<span>home page</span>
+				</a>
+				<a href="./about_us.html" class="header_word">
+					<span>關於我們</span>
+					<span> about us</span>
+				</a>
+				<a href="./class_introduce.html" class="header_word">
+					<span>課程簡介</span>
+					<span>class introduce</span>
+				</a>
+				<a href="./active.html" class="header_word">
+					<span>約拍活動</span>
+					<span>active</span>
+				</a>
+				<a href="./work.html" class="header_word">
+					<span>作品展示</span>
+					<span>art work</span>
+				</a>
+				<a href="./contact_us.html" class="header_word">
+					<span>聯絡我們</span>
+					<span>contact</span>
+				</a>
+			</nav>
+		</header>
+		<div class="page_body">
+			<div class="big_img_block owl-carousel">
+				<img src="./personal_project_picture/bigpic/big_pic_work.jpg" alt="" />
+				<img src="./personal_project_picture/bigpic/bic_pic_active.jpg" alt="" />
+				<img src="./personal_project_picture/bigpic/big_pic_abouts.jpg" alt="" />
+				<img src="./personal_project_picture/bigpic/big_pic_paypage.jpg" alt="" />
+				<img src="./personal_project_picture/bigpic/big_pic_artilce.png" alt="" />
+				<img src="./personal_project_picture/bigpic/big_pic_free.jpg" alt="" />
+				<img src="./personal_project_picture/bigpic/big_pic_payclass.jpg" alt="" />
+				<img src="./personal_project_picture/bigpic/big_pic_contact.jpg" alt="" />
+			</div>
+			<div class="title_block">
+				<h2>報名課程</h2>
+			</div>
+			<div class="class_line"></div>
+			<div class="class_inf">
+				<div class="class_inner">
+					<div class="class_inner_top">
+						<div class="class_inf_img">
+							<img src="./personal_project_picture/pay/pay_page.jpg" alt="" />
+						</div>
+						<div class="class_inf_word">
+							<h5>台中教室-第60期風景攝影平日基礎班</h5>
+							<div class="class_inf_word_inner">
+								<p>實體課程</p>
+								<p>5/23(二)09:00開課</p>
+								<p>授課時長:八小時</p>
+							</div>
+						</div>
+					</div>
+					<div class="class_inner_bottom">
+						<div class="class_inf_price">
+							<span>TWD:</span>
+							9,300
+							<span>元</span>
+						</div>
+						<div class="garbage_can">
+							<button>
+								<i class="fa-regular fa-trash-can"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="class_line"></div>
+			<div class="total_price"><span>總結:TWD:</span>9,300<span>元</span></div>
+			<div class="pay_inf_block">
+				<div class="pay_personal_inf_block">
+					<div class="pay_inf">
+						<h4>付款資訊:</h4>
+						<p>此資訊同時做為聯繫人資訊使用，請確實填寫。</p>
+					</div>
+					<div class="pay_inf_input">
+						<label for="">付款人姓名:</label><br />
+						<input type="text" placeholder="請輸入姓名" />
+					</div>
+					<div class="pay_inf_input">
+						<label for="">付款人電話:</label><br />
+						<input type="tel" placeholder="請輸入電話" />
+					</div>
+					<div class="pay_inf_input">
+						<label for="">付款人信箱:</label><br />
+						<input type="email" placeholder="請輸入電子信箱" />
+					</div>
+				</div>
+				<div class="invoice_inf_block">
+					<div class="invoice_inf">
+						<h4>電子發票:</h4>
+						<div class="invoice_checkbox">
+							<label for="personal"> <input type="checkbox" id="personal" />個人發票</label>
+							<label for="union"><input type="checkbox" id="union" />統編發票</label>
+							<label for="donate"><input type="checkbox" id="donate" />捐贈發票</label>
+							<label for="paper"><input type="checkbox" id="paper" />紙本發票</label>
+						</div>
+					</div>
+					<div class="invoice">
+						<label for="">發票載具-手機條碼<span>(若選紙本發票則非必填)</span>:</label><br />
+						<span>請輸入斜線/加上七位英數的條碼</span>
+						<input type="email" placeholder="請輸入條碼" />
+					</div>
+					<div class="invoice">
+						<label for="">地址:</label><span>(若選擇電子發票則非必填)</span>:<br />
+						<span>作為寄送紙本發票使用，請填寫可收宅配或郵寄掛號之地址</span><br />
+						<input type="email" placeholder="請輸入地址" />
+					</div>
+				</div>
+			</div>
+			<div class="send_button">
+				<button href="#">點我送出</button>
+			</div>
+			<div class="background_bar">
+				<img src="./personal_project_picture/tool/line.svg" alt="" />
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footer_container">
+				<div class="footer_logo">
+					<div class="footer_logo_img">
+						<img src="./personal_project_picture/logo/Component 3.svg" />
+					</div>
+					<div class="logo_name">
+						<h3><a href="./index.html">飛鳥時攝</a></h3>
+						<span>從今開始，學著紀錄美好瞬間</span>
+					</div>
+				</div>
+				<div class="footer_icon">
+					<h4>follow us on</h4>
+					<div class="footer_icon_block">
+						<a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+						<a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+						<a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+					</div>
+					<div class="address">
+						<span>地址:320桃園市中壢區復興路46號9樓</span>
+						<span>電話：03-4251108</span>
+					</div>
+				</div>
+				<div class="content_block_one">
+					<span>課程服務</span>
+					<a href="./freeclass.html">免費課程</a>
+					<a href="./pay_class.html">付費課程</a>
+					<a href="./active.html">約拍活動</a>
+				</div>
+				<div class="content_block_two">
+					<span>關於我們</span>
+					<a href="./about_us.html">關於我們</a>
+					<a href="./work.html">作品展示</a>
+					<a href="./contact_us.html">聯絡我們</a>
+				</div>
+			</div>
+			<div class="tibame">
+				<span>本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。</span>
+			</div>
+		</footer>
+	</body>
 </html>
